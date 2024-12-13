@@ -6,7 +6,13 @@ export const LPageContainer = styled.section`
     height: 100vh;
 `;
 
-export const LandingImage = styled.div`
+export const LpImgContainer = styled.div`
+    display: flex;
+`;
+
+export const LandingImage = styled.img`
+    position: relative;
+    opacity: 0.8;
     height: 100%;
     width: 100%;
 `;
@@ -14,16 +20,18 @@ export const LandingImage = styled.div`
 
 export const DouxContainer = styled.div`
     position: relative;
-    border-radius: 50rem 50rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    background-color: #CA8787;
+    background-color: #803D3B;
 `; 
 
 export const DouxTxtContainer = styled.div`
     position: absolute;
-    top: 0;
-    left: 25%;
+    top: -100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,9 +39,9 @@ export const DouxTxtContainer = styled.div`
 
 export const DouxCree = styled.h1`
     font-family: "Playfair Display", serif;
-    font-size: 6em;
+    font-size: 17rem;
     font-weight: 600;
-    color: #F9F5F6;
+    color: #FFEFEF;
         strong {
             font-family: "Lato", sans-serif;
         }
@@ -44,4 +52,17 @@ export const DxPara = styled.p`
     font-size: 3em;
     font-weight: 600;
     color: #F9F5F6;
+    text-align: center;
+`;
+
+export const BtnKnow = styled.button`
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #803D3B;
+    border: none;
+    border-radius: 4rem;
+    background-color: #F9F5F6;
+    height: 4rem;
+    width: 15rem;
 `;

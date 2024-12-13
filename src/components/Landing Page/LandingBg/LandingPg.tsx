@@ -1,4 +1,4 @@
-import { DouxCree, DouxTxtContainer, DxPara, DouxContainer, LandingImage, LPageContainer } from './StsLandingPage'
+import { DouxCree, DouxTxtContainer, DxPara, DouxContainer, LandingImage, LPageContainer, LpImgContainer, BtnKnow } from './StsLandingPage'
 
 
 const LandingPg = () => {
@@ -6,14 +6,23 @@ const LandingPg = () => {
     return(
         <>
         <LPageContainer>
-            <LandingImage
-
-            />
+            <LpImgContainer>
+                <LandingImage
+                src='src\assets\make1.jpg'
+                />
+                <LandingImage
+                src='src\assets\make1.jpg'
+                />
+                <LandingImage
+                src='src\assets\make1.jpg'
+                />
+            </LpImgContainer>
             <DouxContainer>
                 <DouxTxtContainer>
                     <DouxCree>DOUX<strong>CREÉ</strong></DouxCree>
-                    <DxPara>La beauté qui naît de la douceur</DxPara>
                 </DouxTxtContainer>
+                    <DxPara>La beauté qui naît de la douceur</DxPara>
+                    <BtnKnow>Découvrez</BtnKnow>
             </DouxContainer>
         </LPageContainer>
         </>
