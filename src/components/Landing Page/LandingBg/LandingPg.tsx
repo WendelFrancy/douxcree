@@ -1,11 +1,21 @@
-import { DouxCree } from "./StsLandingPage"
+import { DouxCree, DouxTxtContainer, DxPara, DouxContainer, LandingImage, LPageContainer } from './StsLandingPage'
 
 
 const LandingPg = () => {
 
     return(
         <>
-        <DouxCree>DOUX<strong>CREÉ</strong></DouxCree>
+        <LPageContainer>
+            <LandingImage
+
+            />
+            <DouxContainer>
+                <DouxTxtContainer>
+                    <DouxCree>DOUX<strong>CREÉ</strong></DouxCree>
+                    <DxPara>La beauté qui naît de la douceur</DxPara>
+                </DouxTxtContainer>
+            </DouxContainer>
+        </LPageContainer>
         </>
     )
 }
