@@ -19,7 +19,7 @@ const LandingPg = () => {
             </LpImgContainer>
             <DouxContainer>
                 <DouxTxtContainer>
-                    <DouxCree>DOUX<strong>CREÉ</strong></DouxCree>
+                    <DouxCree>DOUX<strong>CRÉE</strong></DouxCree>
                 </DouxTxtContainer>
                     <DxPara>La beauté qui naît de la douceur</DxPara>
                     <BtnKnow>Découvrez</BtnKnow>
