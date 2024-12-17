@@ -39,7 +39,7 @@ export const DouxTxtContainer = styled.div`
 
 export const DouxCree = styled.h1`
     font-family: "Playfair Display", serif;
-    font-size: 15rem;
+    font-size: 17rem;
     font-weight: 600;
     color: #FFEFEF;
         strong {
