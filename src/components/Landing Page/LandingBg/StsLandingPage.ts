@@ -76,8 +76,7 @@ export const CursivePara = styled.h2`
 `;*/
 
 export const SeasonalBase = styled.img`
-    height: 5rem;
-    width: 5rem;
+    height: 2.3rem;
 `;
 
 
