@@ -1,68 +1,85 @@
 import { styled } from 'styled-components';
 
-export const LPageContainer = styled.section`
-    display: grid;
-    grid-template-rows: 50% 50%;
+
+/* Landing Page Menu */
+
+export const LpBackground = styled.section`
+    background-color: #590D22;
+    padding-top: 50px;
     height: 100vh;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    color: #FFFFFF;
 `;
 
-export const LpImgContainer = styled.div`
+export const LpMenuContainer = styled.div`
     display: flex;
-`;
-
-export const LandingImage = styled.img`
-    position: relative;
-    opacity: 0.8;
-    height: 100%;
-    width: 100%;
-`;
-
-
-export const DouxContainer = styled.div`
-    position: relative;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 100%;
-    background-color: #803D3B;
-`; 
+`;
 
-export const DouxTxtContainer = styled.div`
-    position: absolute;
-    top: -100%;
+export const LpLogoDx = styled.img`
+    width: 47px;
+    height: 50px;
+`;
+
+export const CursiveContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
-export const DouxCree = styled.h1`
-    font-family: "Playfair Display", serif;
-    font-size: 17rem;
-    font-weight: 600;
-    color: #FFEFEF;
-        strong {
-            font-family: "Lato", sans-serif;
-        }
+export const CursiveLogo = styled.img`
+    width: 208px;
+    height: 80px;
 `;
 
-export const DxPara = styled.p`
-    font-family: "Merriweather", serif;
-    font-size: 3em;
-    font-weight: 600;
-    color: #F9F5F6;
+
+export const ChangeIdiome = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+`;
+    
+export const CountryFlag = styled.img`
+    height: 23px;
+    width: 32px;
+`;
+
+export const SelectFlag = styled.p`
+    font-size: 0.9rem;
+`;
+    
+export const CursivePara = styled.h2`
+    font-family: "Parisienne", serif;
+    font-weight: 400;
+    font-size: 2.5rem;
     text-align: center;
+    margin-top: 15px;
 `;
 
-export const BtnKnow = styled.button`
-    font-family: "Lato", sans-serif;
-    font-size: 1.3em;
-    font-weight: 600;
-    color: #803D3B;
-    border: none;
-    border-radius: 4rem;
-    background-color: #F9F5F6;
-    height: 4rem;
-    width: 15rem;
+    
+/* Landing Page Body */
+
+/*export const SeasonalBase = styled.div`
+    clip-path: ellipse(43% 8% at 50% 50%);
+    height: 10rem;
+    width: 20rem;
+    background-color: #800F2F;
+    box-shadow: 5px 5px 5px 10px white;
+`;*/
+
+export const SeasonalBase = styled.img`
+    height: 5rem;
+    width: 5rem;
 `;
+
+
+    
+    

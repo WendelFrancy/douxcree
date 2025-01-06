@@ -1,30 +1,33 @@
-import { DouxCree, DouxTxtContainer, DxPara, DouxContainer, LandingImage, LPageContainer, LpImgContainer, BtnKnow } from './StsLandingPage'
+import { GlobalStyle } from '../../GlobalStyles'
+import { ChangeIdiome, CountryFlag, CursiveContainer, CursiveLogo, CursivePara, LpBackground, LpLogoDx, LpMenuContainer, SeasonalBase, SelectFlag } from './StsLandingPage'
 
 
 const LandingPg = () => {
 
-    return(
+    return (
         <>
-        <LPageContainer>
-            <LpImgContainer>
-                <LandingImage
-                src='src\assets\make1.jpg'
+            <LpBackground>
+                <LpMenuContainer>
+                    <LpLogoDx
+                        src='src\assets\DXLOGOWHITE.png'
+                    />
+                    <CursiveContainer>
+                        <CursiveLogo
+                            src='src\assets\douxcree.png'
+                        />
+                    </CursiveContainer>
+                    <ChangeIdiome>
+                        <CountryFlag
+                        src='src\assets\brflag.png'
+                        />
+                        <SelectFlag>Selecione</SelectFlag>
+                    </ChangeIdiome>
+                </LpMenuContainer>
+                <CursivePara>A beleza que nasce da delicadeza</CursivePara>
+                <SeasonalBase
+                src='src\assets\FloatingBase.png'
                 />
-                <LandingImage
-                src='src\assets\make1.jpg'
-                />
-                <LandingImage
-                src='src\assets\make1.jpg'
-                />
-            </LpImgContainer>
-            <DouxContainer>
-                <DouxTxtContainer>
-                    <DouxCree>DOUX<strong>CRÉE</strong></DouxCree>
-                </DouxTxtContainer>
-                    <DxPara>La beauté qui naît de la douceur</DxPara>
-                    <BtnKnow>Découvrez</BtnKnow>
-            </DouxContainer>
-        </LPageContainer>
+            </LpBackground>
         </>
     )
 }
