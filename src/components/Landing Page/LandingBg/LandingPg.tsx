@@ -1,4 +1,3 @@
-import { GlobalStyle } from '../../GlobalStyles'
 import { ChangeIdiome, CountryFlag, CursiveContainer, CursiveLogo, CursivePara, LpBackground, LpLogoDx, LpMenuContainer, SeasonalBase, SelectFlag } from './StsLandingPage'
 
 
