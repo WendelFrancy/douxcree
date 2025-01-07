@@ -1,4 +1,5 @@
-import { ChangeIdiome, CountryFlag, CursiveContainer, CursiveLogo, CursivePara, LpBackground, LpLogoDx, LpMenuContainer, SeasonalBase, SelectFlag } from './StsLandingPage'
+import { ChangeIdiome, CountryFlag, CursiveContainer, CursiveLogo, 
+         CursivePara, LpBackground, LpBodyContainer, LpLogoDx, LpMenuContainer, Promotions, SelectFlag } from './StsLandingPage'
 
 
 const LandingPg = () => {
@@ -23,9 +24,11 @@ const LandingPg = () => {
                     </ChangeIdiome>
                 </LpMenuContainer>
                 <CursivePara>A beleza que nasce da delicadeza</CursivePara>
-                <SeasonalBase
-                src='src\assets\FloatingBase.png'
-                />
+                <LpBodyContainer>
+                    <Promotions
+                    src='src\assets\promotions.png'
+                    />
+                </LpBodyContainer>
             </LpBackground>
         </>
     )

@@ -67,17 +67,43 @@ export const CursivePara = styled.h2`
     
 /* Landing Page Body */
 
-/*export const SeasonalBase = styled.div`
-    clip-path: ellipse(43% 8% at 50% 50%);
-    height: 10rem;
-    width: 20rem;
-    background-color: #800F2F;
-    box-shadow: 5px 5px 5px 10px white;
-`;*/
-
-export const SeasonalBase = styled.img`
-    height: 2.3rem;
+export const LpBodyContainer = styled.div`
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
 `;
+
+export const PromoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const PromoValue = styled.p`
+    font-size: 1.3rem;
+`;
+
+export const Promotions = styled.img`
+    height: 14rem;
+`;
+
+export const LpCTAContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+`;
+
+export const CTAPara = styled.p`
+    font-size: 1rem;
+`;
+
+export const CTABtn = styled.button`
+    border: none;
+    border-radius: 5rem;
+    color: #590D22;
+    height: 3.5rem;
+    width: 18rem;
+`;
+
 
 
     
