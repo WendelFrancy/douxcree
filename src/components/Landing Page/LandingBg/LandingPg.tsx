@@ -1,5 +1,5 @@
-import { ChangeIdiome, CountryFlag, CursiveContainer, CursiveLogo, 
-         CursivePara, LpBackground, LpBodyContainer, LpLogoDx, LpMenuContainer, Promotions, SelectFlag } from './StsLandingPage'
+import { ChangeIdiome, CountryFlag, CTABtn, CTAPara, CursiveContainer, CursiveLogo, 
+         CursivePara, FooterContainer, LpBackground, LpBodyContainer, LpCTAContainer, LpLogoDx, LpMenuContainer, PromoContainer, Promotions, PromoValue, SelectFlag } from './StsLandingPage'
 
 
 const LandingPg = () => {
@@ -23,12 +23,26 @@ const LandingPg = () => {
                         <SelectFlag>Selecione</SelectFlag>
                     </ChangeIdiome>
                 </LpMenuContainer>
-                <CursivePara>A beleza que nasce da delicadeza</CursivePara>
                 <LpBodyContainer>
-                    <Promotions
-                    src='src\assets\promotions.png'
-                    />
+                    <CursivePara>A beleza que nasce da delicadeza</CursivePara>
+                    <PromoContainer>
+                        <PromoValue>Até 20% de desconto !</PromoValue>
+                        <Promotions
+                        src='src\assets\promotions.png'
+                        />
+                    </PromoContainer>
+                    <LpCTAContainer>
+                        <CTAPara>Na DouxCrée, acreditamos que a beleza deve ser cuidada com delicadeza.
+                            Nossos produtos são desenvolvidos com ingredientes naturais, em um processo
+                            sustentável e com um toque da elegância francesa, para que você se sinta 
+                            bem por dentro e por fora.
+                        </CTAPara>
+                        <CTABtn>Descubra a delicadeza</CTABtn>
+                    </LpCTAContainer>
                 </LpBodyContainer>
+                <FooterContainer>
+                    teste
+                </FooterContainer>
             </LpBackground>
         </>
     )
