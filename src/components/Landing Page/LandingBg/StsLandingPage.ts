@@ -132,11 +132,22 @@ export const CTABtn = styled.button`
 /* Landing Page Footer */
 
 export const FooterContainer = styled.footer`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 5rem;
     width: 100%;
     background-color: #FFECEF;
-    color: black;
 `;
 
-    
+export const InfiniteScroll = styled.div`
+    display: flex;
+    gap: 5rem;
+    overflow: hidden;
+    width: 80%;
+`;
+
+export const FooterLogo = styled.img`
+    height: 3rem;
+`;
     
