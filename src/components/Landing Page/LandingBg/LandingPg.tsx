@@ -49,7 +49,7 @@ const LandingPg = () => {
                         src='src\assets\marimarialogo.png'
                         />
                         <FooterLogo
-                        src='src\assets\bocarosalogo.png'
+                        src='src\assets\kerastaselogo.png'
                         />
                         <FooterLogo
                         src='src\assets\brunatavareslogo.png'
@@ -61,22 +61,69 @@ const LandingPg = () => {
                         src='src\assets\lolalogo.png'
                         />
                         <FooterLogo
+                        src='src\assets\kerastaselogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\marimarialogo.png'
+                        />
+                                                <FooterLogo
+                        src='src\assets\kerastaselogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\marimarialogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\kerastaselogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\brunatavareslogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\fran.png'
+                        />
+                        <FooterLogo
                         src='src\assets\lolalogo.png'
+                        />
+                    </InfiniteScroll>
+                    <InfiniteScroll>
+                        <FooterLogo
+                        src='src\assets\kerastaselogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\marimarialogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\kerastaselogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\brunatavareslogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\fran.png'
                         />
                         <FooterLogo
                         src='src\assets\lolalogo.png'
                         />
                         <FooterLogo
-                        src='src\assets\lolalogo.png'
+                        src='src\assets\kerastaselogo.png'
                         />
                         <FooterLogo
-                        src='src\assets\lolalogo.png'
+                        src='src\assets\marimarialogo.png'
+                        />
+                                                <FooterLogo
+                        src='src\assets\kerastaselogo.png'
                         />
                         <FooterLogo
-                        src='src\assets\lolalogo.png'
+                        src='src\assets\marimarialogo.png'
                         />
                         <FooterLogo
-                        src='src\assets\lolalogo.png'
+                        src='src\assets\kerastaselogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\brunatavareslogo.png'
+                        />
+                        <FooterLogo
+                        src='src\assets\fran.png'
                         />
                         <FooterLogo
                         src='src\assets\lolalogo.png'

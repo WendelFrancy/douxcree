@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { keyframes, styled } from 'styled-components';
 
 
 /* Landing Page Menu */
@@ -93,6 +93,9 @@ export const PromoValue = styled.p`
 
 export const Promotions = styled.img`
     height: 13rem;
+    &:hover{
+        cursor: pointer;
+    }
 `;
 
 export const LpCTAContainer = styled.div`
@@ -131,23 +134,37 @@ export const CTABtn = styled.button`
 
 /* Landing Page Footer */
 
+const anmInfiniteScroll = keyframes`
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+`;
+
 export const FooterContainer = styled.footer`
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 3rem;
     height: 5rem;
     width: 100%;
     background-color: #FFECEF;
 `;
 
+
+/* That shit does not work 
+    Need to change the archive width to be the same (maybe work)
+*/
 export const InfiniteScroll = styled.div`
     display: flex;
-    gap: 5rem;
-    overflow: hidden;
-    width: 80%;
+    gap: 2rem;
+    width: 100%;
+    animation: ${anmInfiniteScroll} 4s linear infinite;
 `;
 
 export const FooterLogo = styled.img`
     height: 3rem;
+    width: 5rem;
 `;
     
