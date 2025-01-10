@@ -1,6 +1,6 @@
 {/*import { useState } from 'react'*/}
 import { GlobalStyle } from './components/GlobalStyles'
-import LandingPg from './components/Landing Page/LandingBg/LandingPg'
+import LandingPg from './components/landingpage/LandingPg'
 
 function App() {
   {/*const [count, setCount] = useState(0)*/}
