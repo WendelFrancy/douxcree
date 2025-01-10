@@ -1,6 +1,6 @@
-import { ChangeIdiome, CountryFlag, CTABtn, CTAPara, CursiveContainer, CursiveLogo, 
-         CursivePara, FooterContainer, FooterLogo, InfiniteScroll, LpBackground, LpBodyContainer, LpCTAContainer, LpLogoDx, LpMenuContainer, PromoContainer, Promotions, PromoValue, SelectFlag } from './StsLandingPage'
-
+import { ChangeIdiome, CountryFlag, CursiveContainer, CursiveLogo, LpLogoDx, LpMenuContainer, LpBackground, SelectFlag } from './StsMenu/StsMenu'
+import { CTABtn, CTAPara, CursivePara, PromoGlow, Promotions, PromoValue, LpBodyContainer, LpCTAContainer, PromoContainer } from './StsBody/StsBody'
+import {  FooterContainer, FooterLogo, InfiniteScroll } from './StsFooter/StsFooter'
 
 const LandingPg = () => {
 
@@ -30,6 +30,7 @@ const LandingPg = () => {
                         <Promotions
                         src='src\assets\promotions.png'
                         />
+                        <PromoGlow/>
                     </PromoContainer>
                     <LpCTAContainer>
                         <CTAPara>Na DouxCrée, acreditamos que a beleza deve ser cuidada com delicadeza.
@@ -66,7 +67,7 @@ const LandingPg = () => {
                         <FooterLogo
                         src='src\assets\marimarialogo.png'
                         />
-                                                <FooterLogo
+                        <FooterLogo
                         src='src\assets\kerastaselogo.png'
                         />
                         <FooterLogo
@@ -110,7 +111,7 @@ const LandingPg = () => {
                         <FooterLogo
                         src='src\assets\marimarialogo.png'
                         />
-                                                <FooterLogo
+                        <FooterLogo
                         src='src\assets\kerastaselogo.png'
                         />
                         <FooterLogo
