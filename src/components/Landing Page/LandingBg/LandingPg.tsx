@@ -1,4 +1,4 @@
-import { ChangeIdiome, CountryFlag, CursiveContainer, CursiveLogo, LpLogoDx, LpMenuContainer, LpBackground, SelectFlag } from './StsMenu/StsMenu'
+import { ChangeIdiome, CountryFlag, CursiveContainer, CursiveLogo, LpLogoDx, LpMenuContainer, LpBackground, SelectFlag, FlagContainer } from './StsMenu/StsMenu'
 import { CTABtn, CTAPara, CursivePara, PromoGlow, Promotions, PromoValue, LpBodyContainer, LpCTAContainer, PromoContainer } from './StsBody/StsBody'
 import {  FooterContainer, FooterLogo, InfiniteScroll } from './StsFooter/StsFooter'
 
@@ -17,9 +17,11 @@ const LandingPg = () => {
                         />
                     </CursiveContainer>
                     <ChangeIdiome>
-                        <CountryFlag
-                        src='src\assets\brflag.png'
-                        />
+                        <FlagContainer>
+                            <CountryFlag
+                            src='src\assets\brflag.png'
+                            />
+                        </FlagContainer>
                         <SelectFlag>Selecione</SelectFlag>
                     </ChangeIdiome>
                 </LpMenuContainer>

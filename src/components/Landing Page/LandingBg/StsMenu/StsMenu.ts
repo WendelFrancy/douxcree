@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import {keyframes, styled} from "styled-components";
 
 export const LpBackground = styled.section`
     display: flex;
@@ -42,16 +42,44 @@ export const ChangeIdiome = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.5rem; 
 
     &:hover {
         cursor: pointer;
     }
 `;
     
+const flagShine = keyframes`
+    0%{
+        left: 0%;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        left: 85%;
+    }
+`;
+
+export const FlagContainer = styled.div`
+    position: relative;
+    height: 21px;
+        &:before{
+        content: "";
+        position: absolute;
+        opacity: .2;
+        top: 5%;
+        left: 0%;
+        width: 5px;
+        height: 90%;
+        background-color: white;
+        box-shadow: 0px 0px 1px 1px white;
+        animation: ${flagShine} 1s ease-in-out;
+    } 
+`;
+
 export const CountryFlag = styled.img`
-    height: 23px;
-    width: 32px;
+    height: 100%;
 `;
 
 export const SelectFlag = styled.p`
