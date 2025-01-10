@@ -51,30 +51,37 @@ export const ChangeIdiome = styled.div`
     
 const flagShine = keyframes`
     0%{
-        left: 0%;
+        left: 30%;
     }
     50%{
-        opacity: .5;
+        opacity: .2;
     }
     100%{
-        left: 85%;
+        left: 65%;
     }
 `;
 
 export const FlagContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     position: relative;
     height: 21px;
-        &:before{
-        content: "";
-        position: absolute;
-        opacity: .2;
-        top: 5%;
-        left: 0%;
-        width: 5px;
-        height: 90%;
-        background-color: white;
-        box-shadow: 0px 0px 1px 1px white;
-        animation: ${flagShine} 1s ease-in-out;
+        &:hover{
+            &:before{
+                content: "";
+                position: absolute;
+                opacity: .05;
+                top: 5%;
+                left: 30%;
+                width: 5px;
+                height: 90%;
+                background-color: white;
+                box-shadow: 0px 0px 5px 1px white;
+                animation: ${flagShine} 1s ease-in-out infinite;
+            }
+        }
     } 
 `;
 

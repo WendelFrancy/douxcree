@@ -21,8 +21,8 @@ const LandingPg = () => {
                             <CountryFlag
                             src='src\assets\brflag.png'
                             />
-                        </FlagContainer>
                         <SelectFlag>Selecione</SelectFlag>
+                        </FlagContainer>
                     </ChangeIdiome>
                 </LpMenuContainer>
                 <LpBodyContainer>
