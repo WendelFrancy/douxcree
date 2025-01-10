@@ -8,13 +8,39 @@ export const LpBodyContainer = styled.div`
     grid-template-rows: 1fr;
 `;
 
-export const CursivePara = styled.h2`
+const shining = keyframes`
+
+    0%{
+        left: 30%;
+    }
+    100%{
+        left: 70%;
+    }
+
+`;
+
+export const CursiveTitle = styled.h2`
+    position: relative;
     font-family: "Parisienne", serif;
     font-weight: 400;
     font-size: 2.5rem;
     text-align: center;
     grid-column: span 2;
     padding-bottom: 3rem;
+
+    &:before{
+
+        display: none; /* Apagar */
+
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 27%;
+        width: 5px;
+        height: 60%;
+        background-color: white;
+        animation: ${shining} 4s ease-in infinite; 
+    }
 `;
 
 export const PromoContainer = styled.div`
