@@ -1,19 +1,5 @@
 import {keyframes, styled} from "styled-components";
 
-export const LpBackground = styled.section`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #590D22;
-    padding-top: 50px;
-    height: 100vh;
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    color: #FFFFFF;
-    overflow: hidden;
-`;
-
 export const LpMenuContainer = styled.div`
     display: flex;
     align-items: center;

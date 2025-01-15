@@ -1,7 +1,11 @@
-import { LpBackground } from './StsMenu/StsMenu'
 import LpMenu from './StsMenu/LpMenu'
 import LpBody from './StsBody/LpBody'
-import LpFooter from './StsFooter/LpFooter'
+import styled from 'styled-components'
+
+
+const LpBackground = styled.div`
+    background-image: url('src/assets/texturebg.png');
+`;
 
 const LandingPg = () => {
 
@@ -10,7 +14,6 @@ const LandingPg = () => {
             <LpBackground>
                 <LpMenu />
                 <LpBody />
-                <LpFooter />
             </LpBackground>
         </>
     )
