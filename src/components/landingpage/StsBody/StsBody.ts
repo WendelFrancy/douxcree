@@ -31,18 +31,22 @@ export const CursiveTitle = styled.h2`
     color: #14213D;
 `;
 
-export const CTAPara = styled.p`
+type TxtProps = {
+    txtColor: string;
+}
+
+export const CTAPara = styled.p<TxtProps>`
     font-family: "Montserrat", serif;
     font-size: 1rem;
     text-align: center;
-    color: #14213D;
+    color: ${({txtColor}) => txtColor || 'white'};
 `;
 
 export const CTABtn = styled.button`
     border: none;
     border-radius: 1.5rem;
     background-color: #14213D;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     font-size: 1rem;
     font-family: "Montserrat", serif;
     font-weight: 500;
@@ -52,9 +56,7 @@ export const CTABtn = styled.button`
     &:hover {
         cursor: pointer;
         background-color:rgb(9, 36, 92);
-    }
-    &:active {
-        box-shadow: inlet 5px 5px 5px black;
+        padding: 1rem 3rem;
     }
 `;
 
@@ -81,6 +83,7 @@ export const CursiveLogo = styled.img`
 `;
 
 export const ChangeIdiome = styled.div`
+    position: relative;
     display: flex;
     align-items: center;
     
@@ -96,11 +99,60 @@ const Rotating = keyframes`
     }
 
     100%{
-        transform: rotate(1800deg);
+        transform: rotate(360deg);
     }
 `;
 
 export const Globe = styled.img`
     width: 2rem;
-    animation: ${Rotating} 300s linear;
+    animation: ${Rotating} 60s linear infinite;
 `;
+
+export const LangContainer = styled.div`
+    position: absolute;
+    display: grid;
+    grid-template-rows: 40%;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    background-color: #EBEBEB;
+    box-shadow: 0 1px 2px 1px rgb(0,0,0,.25);
+`;
+
+export const SelectLangTitle = styled.p`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    height: 100%;
+    background-color: #C59A82;
+    color: #EBEBEB;
+`;
+
+export const SelectLangContainer = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100%;
+    padding: 5px 8px;
+
+    &:hover{
+        background-color:rgb(208, 207, 207);
+    }
+`;
+
+export const Flag = styled.img`
+    height: 13px;
+    width: 17px;
+`;
+
+export const FlagName = styled.p`
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    color: #14213D;
+`;
+
+
+
