@@ -1,5 +1,5 @@
 import { BodyContainer, CursiveTitle } from '../StsBody/StsBody'
-import { ChangeIdiome, CursiveContainer, CursiveLogo, LpLogoDx, LpMenuContainer, FlagContainer, LpSectionBg } from './StsBody'
+import { ChangeIdiome, CursiveContainer, CursiveLogo, LpLogoDx, LpMenuContainer, Globe, LpSectionBg } from './StsBody'
 import { CTABtn, CTAPara, } from './StsBody'
 
 
@@ -20,7 +20,7 @@ const LpBody = () => {
                             />
                         </CursiveContainer>
                         <ChangeIdiome>
-                            <FlagContainer
+                            <Globe
                                 src='src\assets\planet_11527643.png'
                             />
                         </ChangeIdiome>
