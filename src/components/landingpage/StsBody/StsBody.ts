@@ -33,11 +33,12 @@ export const CursiveTitle = styled.h2`
 
 type TxtProps = {
     txtColor: string;
+    txtSize: string;
 }
 
 export const CTAPara = styled.p<TxtProps>`
     font-family: "Montserrat", serif;
-    font-size: 1rem;
+    font-size: ${({txtSize}) => txtSize || '0.8rem'};
     text-align: center;
     color: ${({txtColor}) => txtColor || 'white'};
 `;
@@ -112,12 +113,13 @@ export const LangContainer = styled.div`
     position: absolute;
     display: grid;
     grid-template-rows: 40%;
-    top: 0;
-    left: 0;
-    width: 6rem;
+    top: -20px;
+    left: 0px;
+    width: 5rem;
     height: 6rem;
     background-color: #EBEBEB;
-    box-shadow: 0 1px 2px 1px rgb(0,0,0,.25);
+    box-shadow: 0 1px 1px 1px rgb(0,0,0,.25);
+    border-radius: 0 0 5px 5px;
 `;
 
 export const SelectLangTitle = styled.p`
@@ -125,10 +127,10 @@ export const SelectLangTitle = styled.p`
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     height: 100%;
     background-color: #C59A82;
-    color: #EBEBEB;
+    color: white;
 `;
 
 export const SelectLangContainer = styled.div`
@@ -148,11 +150,6 @@ export const Flag = styled.img`
     width: 17px;
 `;
 
-export const FlagName = styled.p`
-    font-family: "Montserrat", serif;
-    font-size: 1rem;
-    color: #14213D;
-`;
 
 
 

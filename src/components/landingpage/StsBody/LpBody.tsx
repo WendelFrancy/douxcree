@@ -49,9 +49,7 @@ const LpBody = () => {
                                 <LangContainer
                                 ref={langRef}
                                 > 
-                                    <SelectLangTitle>
-                                        Selecione
-                                    </SelectLangTitle>
+                                    <SelectLangTitle>Selecione</SelectLangTitle>
                                     <SelectLangContainer
                                     onClick= {() => escolheuLang('Francês')}
                                     >
@@ -60,6 +58,7 @@ const LpBody = () => {
                                         />
                                         <CTAPara
                                         txtColor='#14123D'
+                                        txtSize='0.8rem'
                                         >FR</CTAPara>
                                     </SelectLangContainer>
                                     <SelectLangContainer
@@ -70,6 +69,7 @@ const LpBody = () => {
                                         />
                                         <CTAPara
                                         txtColor='#14123D'
+                                        txtSize='0.8rem'
                                         >ENG</CTAPara>
                                     </SelectLangContainer>
                                 </LangContainer>
@@ -81,6 +81,7 @@ const LpBody = () => {
                 <LpSectionBg>
                     <CTAPara
                     txtColor= '#14123D'
+                    txtSize='1rem'
                     >
                         Na DouxCrée, acreditamos que a beleza deve ser cuidada com delicadeza.
                         Nossos produtos são desenvolvidos com ingredientes naturais, em um processo
