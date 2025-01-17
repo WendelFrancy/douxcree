@@ -18,7 +18,7 @@ export const LpSectionBg = styled.section`
     gap: 2rem;
     padding: 2rem 2.5rem;
     height: 15rem;
-    width: 40rem;
+    max-width: 40rem;
     background-color: #EBEBEB;
     box-shadow: 0px 2px 1px 1px rgb(0,0,0,.25);
     border-radius: 3rem;

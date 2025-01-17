@@ -8,7 +8,7 @@ const LpBackground = styled.div`
     place-items: center;
     grid-template-columns: 25% 50% 25%;
     height: 100vh;
-    padding: 0 4rem;
+    padding: 0 20rem;
     overflow: hidden;
     background-image: url('src/assets/texturebg.png');
     background-size: 100vh;
