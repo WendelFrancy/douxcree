@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { BodyContainer, CursiveTitle, Flag, LangContainer, SelectLangContainer, SelectLangTitle } from '../StsBody/StsBody'
+import { BigGlobe, BigGlobeBox, BigGlobeContainer, BodyContainer, CursiveTitle, /*{Flag, LangContainer, SelectLangContainer, SelectLangTitle}*/ } from '../StsBody/StsBody'
 import { ChangeIdiome, CursiveContainer, CursiveLogo, LpLogoDx, LpMenuContainer, Globe, LpSectionBg } from './StsBody'
 import { CTABtn, CTAPara, } from './StsBody'
 
@@ -23,9 +23,9 @@ const LpBody = () => {
   
     }, []);
   
-    function escolheuLang (lingua: string) {
+    /*function escolheuLang (lingua: string) {
         alert(`Você escolheu ${lingua}`)
-    }
+    }*/
 
     return (
         <>
@@ -45,7 +45,20 @@ const LpBody = () => {
                                 src='src\assets\planet_11527643.png'
                                 onClick={() => setChooseLang(true)}
                             />
-                            {chooseLang && ( 
+                            {chooseLang && (
+                            <BigGlobeContainer>
+                                <BigGlobeBox
+                                ref={langRef} 
+                                >
+                                    <BigGlobe
+                                    src='src\assets\planet_11527643.png'
+                                    />
+                                </BigGlobeBox>
+                            </BigGlobeContainer>
+                            )}
+                            
+                            
+                            {/*chooseLang && ( 
                                 <LangContainer
                                 ref={langRef}
                                 > 
@@ -73,7 +86,7 @@ const LpBody = () => {
                                         >ENG</CTAPara>
                                     </SelectLangContainer>
                                 </LangContainer>
-                                )}
+                                )*/}
                         </ChangeIdiome>
                     </LpMenuContainer>
                     <CursiveTitle>A beleza que nasce da delicadeza</CursiveTitle>

@@ -12,6 +12,9 @@ const LpBackground = styled.div`
     overflow: hidden;
     background-image: url('src/assets/texturebg.png');
     background-size: 100vh;
+    @media (min-width: 1440px){
+        padding: 0 4rem;
+    }
 `;
 
 const LandingPg = () => {

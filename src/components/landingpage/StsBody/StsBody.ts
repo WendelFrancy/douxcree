@@ -84,7 +84,6 @@ export const CursiveLogo = styled.img`
 `;
 
 export const ChangeIdiome = styled.div`
-    position: relative;
     display: flex;
     align-items: center;
     
@@ -104,11 +103,48 @@ const Rotating = keyframes`
     }
 `;
 
+const RotateBigGlobe = keyframes`
+    0%{
+    
+    }
+    100%{
+    
+    }
+`;
+
 export const Globe = styled.img`
-    width: 2rem;
+    height: 2rem;
     animation: ${Rotating} 60s linear infinite;
 `;
 
+export const BigGlobeContainer = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    &:hover{
+    cursor: default;
+    }
+`;
+
+export const BigGlobeBox = styled.div`
+    content: "";
+    height: 20rem;
+    width: 20rem;
+    &:hover{
+    cursor: pointer;
+    }
+`;
+
+export const BigGlobe = styled.img`
+    width: 100%;
+    height: 100%;
+`;
+
+/*
 export const LangContainer = styled.div`
     position: absolute;
     display: grid;
@@ -150,6 +186,6 @@ export const Flag = styled.img`
     width: 17px;
 `;
 
-
+*/
 
 
