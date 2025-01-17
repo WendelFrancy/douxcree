@@ -103,14 +103,6 @@ const Rotating = keyframes`
     }
 `;
 
-const RotateBigGlobe = keyframes`
-    0%{
-    
-    }
-    100%{
-    
-    }
-`;
 
 export const Globe = styled.img`
     height: 2rem;
