@@ -1,22 +1,10 @@
 import {styled} from "styled-components";
 
-export const CursiveTitle = styled.h2`
-    font-family: "Parisienne", serif;
-    font-weight: 400;
-    font-size: 2.1rem;
-    color: #14213D;
-`;
-
-type TxtProps = {
-    txtColor: string;
-    txtSize: string;
-}
-
-export const CTAPara = styled.p<TxtProps>`
+export const CTAPara = styled.p`
     font-family: "Montserrat", serif;
-    font-size: ${({txtSize}) => txtSize || '0.8rem'};
+    font-size: 1rem;
     text-align: center;
-    color: ${({txtColor}) => txtColor || 'white'};
+    color: #14123D;
 `;
 
 export const CTABtn = styled.button`

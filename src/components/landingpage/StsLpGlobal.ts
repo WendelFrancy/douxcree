@@ -7,7 +7,7 @@ export const LpBackground = styled.div`
     height: 100vh;
     padding: 0 20rem;
     overflow: hidden;
-    background-image: url('src/assets/texturebg.png');
+    background-image: url('src/assets/landingpage/texturebg.png');
     background-size: 100vh;
     @media (max-width: 1440px){
         padding: 0 4rem;
