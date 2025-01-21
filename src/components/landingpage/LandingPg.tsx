@@ -1,6 +1,6 @@
 import LpBody from '../landingpage/StsBody/LpBody'
 import styled from 'styled-components'
-import { Brushes } from '../landingpage/StsBody/StsBody';
+import { Brushes } from '../landingpage/StsBody/StsBody'
 
 
 const LpBackground = styled.div`
@@ -12,7 +12,7 @@ const LpBackground = styled.div`
     overflow: hidden;
     background-image: url('src/assets/texturebg.png');
     background-size: 100vh;
-    @media (min-width: 1440px){
+    @media (max-width: 1440px){
         padding: 0 4rem;
     }
 `;

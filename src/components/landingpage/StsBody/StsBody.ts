@@ -123,21 +123,41 @@ export const BigGlobeContainer = styled.div`
 `;
 
 export const BigGlobeBox = styled.div`
+    position: relative;
     content: "";
     height: 20rem;
     width: 20rem;
 
 `;
 
-export const BigGlobeSvg = styled.svg`
-    background-color: white;
+const BigGlobeAnimate = keyframes`
+    0%{
+        top: -2.2rem;
+        left: 22rem;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
 `;
 
-export const BigGlobe = styled.g`
-    &:hover{
-        cursor: pointer;
-        transform: rotate3d(1,1,0,30deg)
-    }
+export const BigGlobe = styled.img`
+    position: absolute;
+    top: -2.2rem;
+    left: 22rem;
+    width: 2rem;
+    animation: ${BigGlobeAnimate} .35s linear;
+    animation-fill-mode: forwards;
 `;
+
+export const Countrys = styled.div`
+    position: absolute;
+    background-color: blue;
+    clip-path: path('M 0 200 L 0,55 A 5,5 0,0,1 150,75 L 20 200 z');
+`;
+
+
 
 
