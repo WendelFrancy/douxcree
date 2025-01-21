@@ -1,6 +1,7 @@
-import LpBody from '../landingpage/StsBody/LpBody'
 import styled from 'styled-components'
-import { Brushes } from '../landingpage/StsBody/StsBody'
+import { BodyContainer, Brushes } from './CallToActionSection/StsCTA'
+import CTA from './CallToActionSection/CTA';
+import LpMenu from './Menu/LpMenu';
 
 
 const LpBackground = styled.div`
@@ -23,11 +24,14 @@ const LandingPg = () => {
         <>
             <LpBackground>
                 <Brushes
-                src='src\assets\brush1-melhorar.png'
+                    src='src\assets\brush1-melhorar.png'
                 />
-                <LpBody />
+                <BodyContainer>
+                    <LpMenu />
+                    <CTA />
+                </BodyContainer>
                 <Brushes
-                src='src\assets\brush2-melhorar.png'
+                    src='src\assets\brush2-melhorar.png'
                 />
             </LpBackground>
         </>
