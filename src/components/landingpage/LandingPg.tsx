@@ -1,22 +1,7 @@
-import styled from 'styled-components'
-import { BodyContainer, Brushes } from './CallToActionSection/StsCTA'
+import { BodyContainer, Brushes, LpBackground } from './StsLpGlobal'
 import CTA from './CallToActionSection/CTA';
 import LpMenu from './Menu/LpMenu';
 
-
-const LpBackground = styled.div`
-    display: grid;
-    place-items: center;
-    grid-template-columns: 25% 50% 25%;
-    height: 100vh;
-    padding: 0 20rem;
-    overflow: hidden;
-    background-image: url('src/assets/texturebg.png');
-    background-size: 100vh;
-    @media (max-width: 1440px){
-        padding: 0 4rem;
-    }
-`;
 
 const LandingPg = () => {
 
@@ -24,14 +9,14 @@ const LandingPg = () => {
         <>
             <LpBackground>
                 <Brushes
-                    src='src\assets\brush1-melhorar.png'
+                    src='src/assets/landingpage/brush1-melhorar.png' alt='Right Brushes at Background'
                 />
                 <BodyContainer>
                     <LpMenu />
                     <CTA />
                 </BodyContainer>
                 <Brushes
-                    src='src\assets\brush2-melhorar.png'
+                    src='src/assets/landingpage/brush2-melhorar.png' alt='Left Brushes at Background'
                 />
             </LpBackground>
         </>

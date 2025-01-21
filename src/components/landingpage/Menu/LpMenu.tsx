@@ -1,8 +1,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { BigGlobe, BigGlobeBox, BigGlobeContainer, Countrys } from './StsMenu'
-import { ChangeIdiome, CursiveContainer, CursiveLogo, LpLogoDx, LpMenuContainer, Globe } from './StsMenu'
-import { CursiveTitle, LpSectionBg } from '../CallToActionSection/StsCTA';
+import { ChangeIdiome, CursiveContainer, CursiveLogo, CursiveTitle, LpLogoDx, LpMenuContainer, Globe } from './StsMenu'
+import { LpSectionBg } from '../StsLpGlobal';
 
 
 const LpMenu = () => {
@@ -29,16 +29,16 @@ const LpMenu = () => {
             <LpSectionBg>
                 <LpMenuContainer>
                     <LpLogoDx
-                        src='src\assets\DXLOGO.png'
+                        src='src/assets/landingpage/DXLOGO.png' alt='Douxcreé Logo'
                     />
                     <CursiveContainer>
                         <CursiveLogo
-                            src='src\assets\logodx.png'
+                            src='src/assets/landingpage/logodx.png' alt='Douxcreé Cursive Logo'
                         />
                     </CursiveContainer>
                     <ChangeIdiome>
                         <Globe
-                            src='src\assets\planet_11527643.png'
+                            src='src/assets/landingpage/planet.png' alt='Planet Icon'
                             onClick={() => setChooseLang(true)}
                         />
                         {chooseLang && (
@@ -47,7 +47,7 @@ const LpMenu = () => {
                                     ref={langRef}
                                 >
                                     <BigGlobe
-                                        src='src\assets\planet_11527643.png'
+                                        src='src/assets/landingpage/planet.png' alt='Planet Icon'
                                     />
                                     <Countrys />
                                 </BigGlobeBox>

@@ -96,3 +96,10 @@ export const Countrys = styled.div`
     background-color: blue;
     clip-path: path('M 0 200 L 0,55 A 5,5 0,0,1 150,75 L 20 200 z');
 `;
+
+export const CursiveTitle = styled.h2`
+    font-family: "Parisienne", serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+    color: #14213D;
+`;

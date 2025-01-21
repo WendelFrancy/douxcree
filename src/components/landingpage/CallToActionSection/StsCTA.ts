@@ -1,29 +1,5 @@
 import {styled} from "styled-components";
 
-export const BodyContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-`;
-
-export const Brushes = styled.img`
-    height: 80%;
-`;
-
-export const LpSectionBg = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem 2.5rem;
-    height: 15rem;
-    max-width: 40rem;
-    background-color: #EBEBEB;
-    box-shadow: 0px 2px 1px 1px rgb(0,0,0,.25);
-    border-radius: 3rem;
-`;
-
 export const CursiveTitle = styled.h2`
     font-family: "Parisienne", serif;
     font-weight: 400;

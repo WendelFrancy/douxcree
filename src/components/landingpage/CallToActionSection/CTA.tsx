@@ -1,4 +1,5 @@
-import { CTABtn, CTAPara, LpSectionBg, } from './StsCTA'
+import { CTABtn, CTAPara } from './StsCTA'
+import { LpSectionBg } from '../StsLpGlobal'
 
 const CTA = () => {
 
