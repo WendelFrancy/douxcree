@@ -1,8 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
-import { BigGlobe, BigGlobeBox, BigGlobeContainer, BodyContainer, CursiveTitle, /*{Flag, LangContainer, SelectLangContainer, SelectLangTitle}*/ } from '../StsBody/StsBody'
+import { BigGlobe, BigGlobeBox, BigGlobeContainer, BodyContainer, Countrys, CursiveTitle, /*{Flag, LangContainer, SelectLangContainer, SelectLangTitle}*/ } from '../StsBody/StsBody'
 import { ChangeIdiome, CursiveContainer, CursiveLogo, LpLogoDx, LpMenuContainer, Globe, LpSectionBg } from './StsBody'
 import { CTABtn, CTAPara, } from './StsBody'
-
 
 const LpBody = () => {
 
@@ -53,40 +52,10 @@ const LpBody = () => {
                                     <BigGlobe
                                     src='src\assets\planet_11527643.png'
                                     />
+                                    <Countrys/>
                                 </BigGlobeBox>
                             </BigGlobeContainer>
                             )}
-                            
-                            
-                            {/*chooseLang && ( 
-                                <LangContainer
-                                ref={langRef}
-                                > 
-                                    <SelectLangTitle>Selecione</SelectLangTitle>
-                                    <SelectLangContainer
-                                    onClick= {() => escolheuLang('Francês')}
-                                    >
-                                        <Flag
-                                        src='src\assets\frflag.png'
-                                        />
-                                        <CTAPara
-                                        txtColor='#14123D'
-                                        txtSize='0.8rem'
-                                        >FR</CTAPara>
-                                    </SelectLangContainer>
-                                    <SelectLangContainer
-                                    onClick={() => escolheuLang('Inglês')}
-                                    >
-                                        <Flag
-                                        src='src\assets\engflag.png'
-                                        />
-                                        <CTAPara
-                                        txtColor='#14123D'
-                                        txtSize='0.8rem'
-                                        >ENG</CTAPara>
-                                    </SelectLangContainer>
-                                </LangContainer>
-                                )*/}
                         </ChangeIdiome>
                     </LpMenuContainer>
                     <CursiveTitle>A beleza que nasce da delicadeza</CursiveTitle>

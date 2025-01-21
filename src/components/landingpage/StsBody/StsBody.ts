@@ -123,6 +123,7 @@ export const BigGlobeContainer = styled.div`
 `;
 
 export const BigGlobeBox = styled.div`
+    position: relative;
     content: "";
     height: 20rem;
     width: 20rem;
@@ -131,53 +132,32 @@ export const BigGlobeBox = styled.div`
     }
 `;
 
-export const BigGlobe = styled.img`
-    width: 100%;
-    height: 100%;
-`;
-
-/*
-export const LangContainer = styled.div`
-    position: absolute;
-    display: grid;
-    grid-template-rows: 40%;
-    top: -20px;
-    left: 0px;
-    width: 5rem;
-    height: 6rem;
-    background-color: #EBEBEB;
-    box-shadow: 0 1px 1px 1px rgb(0,0,0,.25);
-    border-radius: 0 0 5px 5px;
-`;
-
-export const SelectLangTitle = styled.p`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", serif;
-    font-size: 0.8rem;
-    height: 100%;
-    background-color: #C59A82;
-    color: white;
-`;
-
-export const SelectLangContainer = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    height: 100%;
-    padding: 5px 8px;
-
-    &:hover{
-        background-color:rgb(208, 207, 207);
+const BigGlobeAnimate = keyframes`
+    0%{
+        top: -2.2rem;
+        left: 22rem;
     }
+    100%{
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
 `;
 
-export const Flag = styled.img`
-    height: 13px;
-    width: 17px;
+export const BigGlobe = styled.img`
+    position: absolute;
+    top: -2.2rem;
+    left: 22rem;
+    width: 2rem;
+    animation: ${BigGlobeAnimate} .35s linear;
+    animation-fill-mode: forwards;
 `;
 
-*/
+export const Countrys = styled.div`
+    position: absolute;
+    background-color: blue;
+    clip-path: path('M 0 200 L 0,55 A 5,5 0,0,1 150,75 L 20 200 z');
+`;
 
 
