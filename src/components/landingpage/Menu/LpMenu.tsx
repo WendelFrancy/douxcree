@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
-import { BigGlobe, BigGlobeBox, BigGlobeContainer, Countrys } from './StsMenu'
-import { ChangeIdiome, CursiveContainer, CursiveLogo, CursiveTitle, LpLogoDx, LpMenuContainer, Globe } from './StsMenu'
+import { ChangeIdiome, CursiveContainer, CursiveLogo, CursiveTitle, LpLogoDx,
+LpMenuContainer, Globe, BigGlobe, BigGlobeBox, BigGlobeContainer, Countrys } from './StsMenu'
 import { LpSectionBg } from '../StsLpGlobal';
 
 
