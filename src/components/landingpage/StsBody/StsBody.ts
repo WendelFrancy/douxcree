@@ -126,58 +126,18 @@ export const BigGlobeBox = styled.div`
     content: "";
     height: 20rem;
     width: 20rem;
+
+`;
+
+export const BigGlobeSvg = styled.svg`
+    background-color: white;
+`;
+
+export const BigGlobe = styled.g`
     &:hover{
-    cursor: pointer;
+        cursor: pointer;
+        transform: rotate3d(1,1,0,30deg)
     }
 `;
-
-export const BigGlobe = styled.img`
-    width: 100%;
-    height: 100%;
-`;
-
-/*
-export const LangContainer = styled.div`
-    position: absolute;
-    display: grid;
-    grid-template-rows: 40%;
-    top: -20px;
-    left: 0px;
-    width: 5rem;
-    height: 6rem;
-    background-color: #EBEBEB;
-    box-shadow: 0 1px 1px 1px rgb(0,0,0,.25);
-    border-radius: 0 0 5px 5px;
-`;
-
-export const SelectLangTitle = styled.p`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Montserrat", serif;
-    font-size: 0.8rem;
-    height: 100%;
-    background-color: #C59A82;
-    color: white;
-`;
-
-export const SelectLangContainer = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    height: 100%;
-    padding: 5px 8px;
-
-    &:hover{
-        background-color:rgb(208, 207, 207);
-    }
-`;
-
-export const Flag = styled.img`
-    height: 13px;
-    width: 17px;
-`;
-
-*/
 
 
