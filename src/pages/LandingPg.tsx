@@ -1,6 +1,6 @@
-import { BodyContainer, Brushes, LpBackground } from './StsLpGlobal'
-import CTA from './CallToActionSection/CTA';
-import LpMenu from './Menu/LpMenu';
+import { BodyContainer, Brushes, LpBackground } from '../components/landingpage/StsLpGlobal'
+import CTA from '../components/landingpage/CallToActionSection/CTA';
+import LpMenu from '../components/landingpage/Menu/LpMenu';
 
 
 const LandingPg = () => {
