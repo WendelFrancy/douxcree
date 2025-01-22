@@ -1,5 +1,5 @@
 import { CTABtn, CTAPara } from './StsCTA'
-import { LpSectionBg } from '../StsLpGlobal'
+import { LpSectionBg } from '../StsLandingPage'
 import { Link } from 'react-router-dom'
 
 const CTA = () => {
@@ -13,7 +13,7 @@ const CTA = () => {
                     sustentável e com um toque da elegância francesa, para que você se sinta
                     bem por dentro e por fora.
                 </CTAPara>
-                <Link to="/about"><CTABtn>Descubra a delicadeza</CTABtn></Link>
+                <Link to="/catalogue"><CTABtn>Descubra a delicadeza</CTABtn></Link>
             </LpSectionBg>
         </>
     )

@@ -1,8 +1,8 @@
-
 import { useEffect, useRef, useState } from 'react';
-import { ChangeIdiome, CursiveContainer, CursiveLogo, CursiveTitle, LpLogoDx,
+import { ChangeIdiome, CursiveContainer, CursiveLogo, CursiveTitle, 
 LpMenuContainer, Globe, BigGlobe, BigGlobeBox, BigGlobeContainer, Countrys } from './StsMenu'
-import { LpSectionBg } from '../StsLpGlobal';
+import { LogoDx } from '../../GlobalStyles';
+import { LpSectionBg } from '../StsLandingPage';
 
 
 const LpMenu = () => {
@@ -28,7 +28,7 @@ const LpMenu = () => {
         <>
             <LpSectionBg>
                 <LpMenuContainer>
-                    <LpLogoDx
+                    <LogoDx
                         src='src/assets/landingpage/DXLOGO.png' alt='Douxcreé Logo'
                     />
                     <CursiveContainer>

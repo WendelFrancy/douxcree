@@ -1,9 +1,11 @@
-import { createGlobalStyle } from 'styled-components';
+import { styled, createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
     *{margin: 0; padding: 0; box-sizing: border-box;}
 
+`;
 
-
+export const LogoDx = styled.img`
+    height: 36.5px;
 `;
