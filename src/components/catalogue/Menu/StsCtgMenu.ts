@@ -13,6 +13,8 @@ const changing = keyframes<BgColorChange>`
     }
 `;
 
+/* Alterar a animação do Hover no Menu, para animação em JS com mouseup e mousedown*/
+
 export const FixedMenu = styled.menu`
     position: fixed;
     display: grid;
@@ -43,13 +45,6 @@ export const LogoName = styled.p`
     font-weight: 500;
 `;
 
-/*
-export const GlobeContainer = styled.div`
-    display: flex;
-    padding: 40% 0;
-`;
-*/
-
 export const NavBar = styled.nav`
     align-content: center;
     height: 100%;
@@ -74,17 +69,6 @@ export const ActionsContainer = styled.div`
     align-items: center;
     justify-content: space-evenly;
 `;
-
-/*
-export const ActionsBg = styled.div`
-    display: grid;
-    place-items: center;
-    background-color: orange;
-    border-radius: .5rem;
-    height: 3rem;
-    width: 3rem;
-`;
-*/
 
 export const Actions = styled.div`
     display: grid;

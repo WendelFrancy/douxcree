@@ -11,17 +11,21 @@ const CtgMenu: React.FC = () => {
             <CtgBackground>
                 <FixedMenu>
                     <DxContainer>
+                        {/* Adicionar Link de retorno para LandinPage ao clicar na Logo
+                            Considerar a adição de um efeito de carregamento na LandinPage.
+                        */}
                         <LogoDx
                             src='src\assets\landingpage\DXLOGO.png'
                         />
                         <LogoName>DouxCreé</LogoName>
                     </DxContainer>
-                    {/*<GlobeContainer>
-                        <Globe
-                        src='src\assets\landingpage\planet.png'
-                        />
-                    </GlobeContainer>*/}
                     <NavBar>
+                        {/*
+                            Talvez: Alterar Home
+
+                            Adicionar efeito de MouseUp e MouseDown na navbar para aparecer um componente
+                            com a "lista de categorias" e produtos.
+                        */}
                         <NavList>
                             <Navigation>Home</Navigation>
                             <Navigation>Produtos</Navigation>
@@ -31,6 +35,9 @@ const CtgMenu: React.FC = () => {
                     </NavBar>
                     <ActionsMenu />
                 </FixedMenu>
+                {/* Procurar imagens grandes e de boa qualidade para colocar como promoções em background
+                    Será que vale a pena fazer uma promo personalizada com a logo da DouxCreé no Photoshop? Talvez.
+                */}
                 <PromoContainer>
                     <Promotions src='src\assets\promo.jpg' />
                 </PromoContainer>
