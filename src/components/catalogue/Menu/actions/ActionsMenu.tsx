@@ -4,15 +4,9 @@ const ActionsMenu = () => {
     return (
         <>
             <ActionsContainer>
-                <Actions
-                    src='src\assets\lupa.png'
-                ></Actions>
-                <Actions
-                    src='src\assets\login.png'
-                ></Actions>
-                <Actions
-                    src='src\assets\cart.png'
-                ></Actions>
+                <Actions><img src='src\assets\lupa.png'></img></Actions>
+                <Actions><img src='src\assets\login.png'></img></Actions>
+                <Actions><img src='src\assets\cart.png'></img></Actions>
             </ActionsContainer>
         </>
     )

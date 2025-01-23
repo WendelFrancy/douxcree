@@ -1,9 +1,22 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+type BgColorChange = {
+    changing: Keyframe;
+}
+
+const changing = keyframes<BgColorChange>`
+    0%{
+
+    }
+    100%{
+        background-color: white;
+    }
+`;
 
 export const FixedMenu = styled.menu`
     position: fixed;
     display: grid;
-    grid-template-columns: 30% 50% 20%;
+    grid-template-columns: 20% 60% 20%;
     height: 8rem;
     width: 80%;
     padding: 0 4rem;
@@ -12,14 +25,15 @@ export const FixedMenu = styled.menu`
     box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
     font-family: "Montserrat", serif;
     &:hover{
-        background-color: white;
+        animation: ${changing} .3s linear;
+        animation-fill-mode: forwards;
     }
 `;
 
 export const DxContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
     justify-content: center;
 `;
@@ -61,10 +75,29 @@ export const ActionsContainer = styled.div`
     justify-content: space-evenly;
 `;
 
-export const Actions = styled.img`
-    height: 1.5rem;
+/*
+export const ActionsBg = styled.div`
+    display: grid;
+    place-items: center;
+    background-color: orange;
+    border-radius: .5rem;
+    height: 3rem;
+    width: 3rem;
+`;
+*/
+
+export const Actions = styled.div`
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    img{ 
+        height: 1.5rem;
+    }
     &:hover{
         cursor: pointer;
+        background-color: orange;
+        border-radius: .5rem;
     }
 `;
 
