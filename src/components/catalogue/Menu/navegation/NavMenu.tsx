@@ -13,6 +13,10 @@ const NavMenu = () => {
                 <NavList>
                     <Navigation>Home</Navigation>
                     <Navigation>Produtos</Navigation>
+                    <Navigation>Home</Navigation>
+                    <Navigation>Produtos</Navigation>
+                    <Navigation>Home</Navigation>
+                    <Navigation>Produtos</Navigation>
                     <Navigation>Descubra seu tom</Navigation>
                     <Navigation>Fale conosco</Navigation>
                 </NavList>

@@ -1,10 +1,11 @@
 import styled, { keyframes } from "styled-components";
 
-type BgColorChange = {
+type MenuFrames = {
     changing: Keyframe;
+    hoverBtn: Keyframe;
 }
 
-const changing = keyframes<BgColorChange>`
+const changing = keyframes<MenuFrames>`
     0%{
 
     }
@@ -13,23 +14,48 @@ const changing = keyframes<BgColorChange>`
     }
 `;
 
+const hoverBtn = keyframes<MenuFrames>`
+    0%{ 
+        background-color: unset;
+        width: 70%;
+    }
+    50%{
+        border-radius: 1.4rem; 
+    }
+    100%{
+        background-color: #fb8b24;
+        width: 100%;
+        border-radius: .9rem;
+    }
+`;
+
 /* Alterar a animação do Hover no Menu, para animação em JS com mouseup e mousedown*/
 
-export const FixedMenu = styled.menu`
-    position: fixed;
+export const MenuContainer = styled.div`
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    height: 8rem;
-    width: 80%;
-    padding: 0 4rem;
+    grid-template-rows: 8rem 3rem;
+    align-items: center;
+    position: fixed;
+    padding: 0 10%;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
+        &:hover{
+            animation: ${changing} .3s linear;
+            animation-fill-mode: forwards;
+        .btnSearch{
+            animation: ${hoverBtn} .2s linear;
+            animation-fill-mode: forwards;
+        }  
+    }
+`;
+
+export const FixedMenu = styled.menu`
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    min-width: 80%;
     margin: 0 10%;
     border-radius: 0 0 1rem 1rem;
-    box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
     font-family: "Montserrat", serif;
-    &:hover{
-        animation: ${changing} .3s linear;
-        animation-fill-mode: forwards;
-    }
 `;
 
 export const DxContainer = styled.div`
@@ -45,25 +71,6 @@ export const LogoName = styled.p`
     font-weight: 500;
 `;
 
-export const NavBar = styled.nav`
-    align-content: center;
-    height: 100%;
-    width: 100%;
-
-`;
-
-export const NavList = styled.ul`
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style: none;
-`;
-
-export const Navigation = styled.li`
-    font-size: 1rem;
-    font-weight: 400;
-`;
-
 export const ActionsContainer = styled.div`
     display: flex;
     align-items: center;
@@ -71,16 +78,17 @@ export const ActionsContainer = styled.div`
 `;
 
 export const Actions = styled.div`
-    display: grid;
-    place-items: center;
-    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 7rem;
     height: 3rem;
     img{ 
         height: 1.5rem;
     }
     &:hover{
         cursor: pointer;
-        background-color: orange;
         border-radius: .5rem;
     }
 `;
