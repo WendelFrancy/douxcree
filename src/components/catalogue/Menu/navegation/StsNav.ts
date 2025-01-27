@@ -27,3 +27,14 @@ export const Navigation = styled.li`
         background-color:rgb(236, 236, 236);
     }
 `;
+ /* Z-INDEX NÃO ESTÁ FUNCIONANDO, CORRIGIR!!! */
+export const MenuOptionsContainer = styled.div`
+    z-index: 0;
+    position: absolute;
+    left: 20;
+    align-self: center;
+    height: 20rem;
+    width: 80%;
+    background-color: black;
+`;
+

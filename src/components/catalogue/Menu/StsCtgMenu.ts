@@ -22,13 +22,14 @@ const hoverBtn = keyframes<MenuFrames>`
     100%{
         background-color: #fb8b24;
         width: 100%;
-        border-radius: .9rem;
+        border-radius: .9rem;        
     }
 `;
 
 /* Alterar a animação do Hover no Menu, para animação em JS com mouseup e mousedown*/
 
 export const MenuContainer = styled.div`
+    z-index: 999999;
     display: grid;
     grid-template-rows: 8rem 3rem;
     align-items: center;
@@ -38,7 +39,6 @@ export const MenuContainer = styled.div`
     background-color: white;
     box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
         &:hover{
-            
             .btnSearch{
                 animation: ${hoverBtn} .2s linear;
                 animation-fill-mode: forwards;
@@ -51,6 +51,7 @@ export const MenuContainer = styled.div`
 `;
 
 export const FixedMenu = styled.menu`
+    position: relative;
     display: grid;
     grid-template-columns: 20% 50% 30%;
     margin: 0 10%;

@@ -1,6 +1,18 @@
-import { NavBar, NavList, Navigation } from './StsNav'
+import { useState } from 'react'
+import { NavBar, NavList, Navigation, MenuOptionsContainer } from './StsNav'
 
 const NavMenu = () => {
+
+    const [isHovered, setisHovered] = useState(false);
+
+    const mouseEnter = () => {
+        setisHovered(true);
+    }
+
+    const mouseLeaves = () => {
+        setisHovered(false);
+    }
+
     return (
         <>
             <NavBar>
@@ -11,8 +23,12 @@ const NavMenu = () => {
                             com a "lista de categorias" e produtos.
                         */}
                 <NavList>
-                    <Navigation>Home</Navigation>
-                    <Navigation>Produtos</Navigation>
+                    <Navigation 
+                    onMouseEnter={() => mouseEnter()}
+                    > Home </Navigation>
+                    <Navigation
+                    
+                    >Produtos</Navigation>
                     <Navigation>Home</Navigation>
                     <Navigation>Produtos</Navigation>
                     <Navigation>Home</Navigation>
@@ -20,6 +36,7 @@ const NavMenu = () => {
                     <Navigation>Descubra seu tom</Navigation>
                     <Navigation>Fale conosco</Navigation>
                 </NavList>
+                {isHovered && (<MenuOptionsContainer onMouseLeave={() => mouseLeaves()}/>)}
             </NavBar>
         </>
     )

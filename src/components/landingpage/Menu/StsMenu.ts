@@ -8,10 +8,6 @@ export const LpMenuContainer = styled.div`
     width: 100%;
 `;
 
-export const LpLogoDx = styled.img`
-    height: 36.5px;
-`;
-
 export const CursiveContainer = styled.div`
     display: flex;
     flex-direction: column;
