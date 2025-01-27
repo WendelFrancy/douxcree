@@ -6,18 +6,15 @@ type MenuFrames = {
 }
 
 const changing = keyframes<MenuFrames>`
-    0%{
-
-    }
     100%{
-        background-color: white;
+        background-color: white;  
     }
 `;
 
 const hoverBtn = keyframes<MenuFrames>`
     0%{ 
         background-color: unset;
-        width: 70%;
+        width: 50%;
     }
     50%{
         border-radius: 1.4rem; 
@@ -38,21 +35,24 @@ export const MenuContainer = styled.div`
     position: fixed;
     padding: 0 10%;
     width: 100%;
+    background-color: white;
     box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
         &:hover{
-            animation: ${changing} .3s linear;
-            animation-fill-mode: forwards;
-        .btnSearch{
-            animation: ${hoverBtn} .2s linear;
-            animation-fill-mode: forwards;
-        }  
-    }
+            
+            .btnSearch{
+                animation: ${hoverBtn} .2s linear;
+                animation-fill-mode: forwards;
+            }  
+            .searchContainer{
+                animation: ${changing} .3s linear;
+                animation-fill-mode: forwards;
+            }
+        }
 `;
 
 export const FixedMenu = styled.menu`
     display: grid;
     grid-template-columns: 20% 50% 30%;
-    min-width: 80%;
     margin: 0 10%;
     border-radius: 0 0 1rem 1rem;
     font-family: "Montserrat", serif;
@@ -94,12 +94,15 @@ export const Actions = styled.div`
 `;
 
 export const PromoContainer = styled.div`
+    display: flex;
+    justify-content: center;
     overflow: hidden;
+    background-color: #f7bf9a;
+    margin-top: 11rem;
 `;
 
 export const Promotions = styled.img`
-    height: 100vh;
-    width: 100%;
+    height: 60vh;
 `;
 
 

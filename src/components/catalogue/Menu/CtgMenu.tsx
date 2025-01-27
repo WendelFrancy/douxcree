@@ -33,7 +33,7 @@ const CtgMenu: React.FC = () => {
                         Será que vale a pena fazer uma promo personalizada com a logo da DouxCreé no Photoshop? Talvez.
                     */}
                 <PromoContainer>
-                    <Promotions src='src\assets\promo.jpg' />
+                    <Promotions src='src\assets\douxcreeimg.png' />
                 </PromoContainer>
             </CtgBackground>
         </>
