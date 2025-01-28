@@ -32,13 +32,24 @@ export const Navigation = styled.li`
     }
 `;
 
-export const MenuOptionsContainer = styled.div`
+export const MenuOptionsContainer = styled.section`
     z-index: 0;
     position: absolute;
     left: 20;
+    flex-wrap: wrap;
     align-self: center;
     height: 20rem;
     width: 100%;
-    background-color: black;
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgb(0,0,0,.25);
+`;
+
+export const MenuOptions = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const OptionsTitle = styled.h1`
+    font-weight: 500;
 `;
 

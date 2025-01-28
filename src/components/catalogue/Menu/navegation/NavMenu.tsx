@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { NavBar, NavList, Navigation, MenuOptionsContainer } from './StsNav'
+import Options from './Options';
 
 const NavMenu = () => {
 
+    /* Função para expandir o menu quando estiver em hover */
     const [isHovered, setisHovered] = useState(false);
-
     const mouseEnter = () => {
         setisHovered(true);
     }
-
     const mouseLeaves = () => {
         setisHovered(false);
     }
@@ -36,7 +36,13 @@ const NavMenu = () => {
                     <Navigation>Descubra seu tom</Navigation>
                     <Navigation>Fale conosco</Navigation>
                 </NavList>
-                {isHovered && (<MenuOptionsContainer onMouseLeave={() => mouseLeaves()}/>)}
+                {isHovered && (
+                <MenuOptionsContainer onMouseLeave={() => mouseLeaves()}>
+                    <Options 
+                    optionsTitle= {'teste'}
+                    />
+                </MenuOptionsContainer>
+                )}
             </NavBar>
         </>
     )
