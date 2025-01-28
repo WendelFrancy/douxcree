@@ -2,7 +2,7 @@ import React from "react";
 import { MenuOptions, OptionsTitle } from "./StsNav"
 
 type Opcoes = {
-    optionsTitle: string | JSX.Element;
+    optionTitle: string | JSX.Element | boolean;
 }
 
 const Options: React.FC<Opcoes> = (props) =>  {
@@ -10,7 +10,7 @@ const Options: React.FC<Opcoes> = (props) =>  {
     return(
         <>    
             <MenuOptions>
-                <OptionsTitle>{props.optionsTitle}</OptionsTitle>
+                <OptionsTitle>{props.optionTitle}</OptionsTitle>
             </MenuOptions>
         </>
     )
