@@ -25,6 +25,9 @@ export const Navigation = styled.li`
     font-size: .8rem;
     font-weight: 400;
     height: 100%;
+    .navpara{
+        border-bottom: 1px solid blue;
+    }
 `;
 
 export const MenuOptionsContainer = styled.section`
@@ -35,6 +38,7 @@ export const MenuOptionsContainer = styled.section`
     align-self: center;
     height: 20rem;
     width: 100%;
+    padding: 1rem 2rem;
     background-color: white;
     box-shadow: 0 1px 2px 0 rgb(0,0,0,.25);
 `;
@@ -47,4 +51,7 @@ export const MenuOptions = styled.div`
 export const OptionsTitle = styled.h1`
     font-weight: 500;
 `;
+
+
+
 

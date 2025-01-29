@@ -4,17 +4,21 @@ import Options from './Options';
 
 const NavMenu = () => {
 
-    /* Função para expandir o menu quando estiver em hover */
+    const [isMouseUp, setisMouseUp] = useState('');
+    const mouseUp = (e: React.MouseEvent) => {
+        const newBorder = e.currentTarget.id;
+        if (newBorder) {
+            setisMouseUp(newBorder)
+        }
+    }
+
     const [isHovered, setisHovered] = useState(false);
     const mouseEnter = () => {
         setisHovered(true);
-        const menuParag = document.querySelectorAll('navpara');
-        if (isHovered) {
-            (menuParag[1] as HTMLElement).style.borderBottomColor = 'blue'
-        }
     }
     const mouseLeaves = () => {
         setisHovered(false);
+        setisMouseUp('');
     }
 
     const [optionsTitle, setOptionsTitle] = useState('default');
@@ -36,52 +40,56 @@ const NavMenu = () => {
             >
                 <NavList>
                     <Navigation
-                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='home'
                     >
-                        <p className='navpara'>Home</p>
+                        <p className={isMouseUp === 'home' ? 'navpara' : ''}>
+                            Home
+                        </p>
                     </Navigation>
                     <Navigation
-                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='produtos'
                     >
-                        <p className='navpara'>Produtos</p>
+                        <p className={isMouseUp == 'produtos' ? 'navpara' : ''}>
+                            Produtos
+                        </p>
                     </Navigation>
                     <Navigation
-                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='home2'
                     >
-                        <p className='navpara'> Home </p>
+                        <p className={isMouseUp == 'home2' ? 'navpara' : ""}> Home </p>
                     </Navigation>
                     <Navigation
-                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='produtos2'
                     >
-                        <p className='navpara'> Produtos </p>
+                        <p className={isMouseUp == 'produtos2' ? 'navpara' : ""}> Produtos </p>
                     </Navigation>
                     <Navigation
-                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='home5'
                     >
-                        <p className='navpara'> Home </p>
+                        <p className={isMouseUp == 'home5' ? 'navpara' : ""}> Home </p>
                     </Navigation>
                     <Navigation
-                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='home6'
                     >
-                        <p className='navpara'> Produtos </p>
+                        <p className={isMouseUp == 'home6' ? 'navpara' : ""}> Produtos </p>
                     </Navigation>
                     <Navigation
-                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='home7'
                     >
-                        <p className='navpara'> Descubra seu tom </p>
+                        <p className={isMouseUp == 'home7' ? 'navpara' : ""}> Descubra seu tom </p>
                     </Navigation>
                     <Navigation
-                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='home8'
                     >
-                        <p className='navpara'> Fale conosco </p>
+                        <p className={isMouseUp == 'home8' ? 'navpara' : ""}> Fale conosco </p>
                     </Navigation>
                 </NavList>
                 {isHovered && (
