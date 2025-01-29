@@ -1,4 +1,11 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const navMotion = keyframes`
+    100%{
+        border-bottom: 2px solid #fb8b24;
+        padding-bottom: 3px;
+    }
+`;
 
 export const NavBar = styled.nav`
     z-index: 1;
@@ -26,7 +33,8 @@ export const Navigation = styled.li`
     font-weight: 400;
     height: 100%;
     .navpara{
-        border-bottom: 1px solid blue;
+        animation: ${navMotion} .1s linear;
+        animation-fill-mode: forwards;
     }
 `;
 
@@ -34,6 +42,9 @@ export const MenuOptionsContainer = styled.section`
     z-index: 0;
     position: absolute;
     left: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     align-self: center;
     height: 20rem;
