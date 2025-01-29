@@ -10,12 +10,22 @@ const Options: React.FC<Opcoes> = (props) =>  {
     const optionsMap: Record<string, JSX.Element> = {
         home: (
             <>
-            <OptionsTitle>Bem vindo a Home</OptionsTitle>
+            <OptionsTitle> Bem vindo a Home </OptionsTitle>
             </>
         ),
         produtos: (
             <>
-            <OptionsTitle>Bem vindo a Produtos</OptionsTitle>
+            <OptionsTitle> Bem vindo a Produtos </OptionsTitle>
+            </>
+        ),
+        faleconosco: (
+            <>
+            <OptionsTitle> Fale Conosco </OptionsTitle>
+            </>
+        ),
+        descobrirtom: (
+            <>
+            <OptionsTitle> Descubra seu tom </OptionsTitle>
             </>
         ),
     }
@@ -23,9 +33,9 @@ const Options: React.FC<Opcoes> = (props) =>  {
     return(
         <>    
             <MenuOptions
-            id={props.optionTitle} //A informação chega aqui, mas como fazer isso alterar o restante dinamicamente?
+            id={props.optionTitle} 
             >
-                {optionsMap[props.optionTitle] || <h1>Ainda não fiz</h1>}
+                {optionsMap[props.optionTitle] || <h1> Em desenvolvimento </h1>}
             </MenuOptions>
         </>
     )

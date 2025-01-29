@@ -26,12 +26,10 @@ const hoverBtn = keyframes<MenuFrames>`
     }
 `;
 
-/* Alterar a animação do Hover no Menu, para animação em JS com mouseup e mousedown*/
-
 export const MenuContainer = styled.div`
     z-index: 999999;
     display: grid;
-    grid-template-rows: 8rem 3rem;
+    grid-template-rows: 6rem 3rem;
     align-items: center;
     position: fixed;
     padding: 0 10%;
@@ -68,14 +66,20 @@ export const DxContainer = styled.div`
 `;
 
 export const LogoName = styled.p`
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 500;
 `;
 
+
+// Adicionar background-color para cada elemento filho dessa div.
+// Que são os botões de ação do menu.
 export const ActionsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    &:hover{
+    background-color: yellow;
+    }
 `;
 
 export const Actions = styled.div`
@@ -83,14 +87,16 @@ export const Actions = styled.div`
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    width: 7rem;
+    width: 1rem;
     height: 3rem;
     img{ 
         height: 1.5rem;
     }
+    p{
+        font-size: .9rem;
+    }
     &:hover{
         cursor: pointer;
-        border-radius: .5rem;
     }
 `;
 
@@ -99,7 +105,7 @@ export const PromoContainer = styled.div`
     justify-content: center;
     overflow: hidden;
     background-color: #f7bf9a;
-    margin-top: 11rem;
+    margin-top: 9rem;
 `;
 
 export const Promotions = styled.img`

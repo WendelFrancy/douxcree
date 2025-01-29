@@ -21,7 +21,7 @@ export const SearchInput = styled.input`
     font-family: "Montserrat", serif;
     height: 100%;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: .9rem;
     border: none;
     outline: none;
     background-color: unset;
@@ -43,5 +43,5 @@ export const SearchBtn = styled.button`
 `;
 
 export const Lens = styled.img`
-    height: 1.5rem;
+    height: 1.3rem;
 `;

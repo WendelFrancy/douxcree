@@ -81,15 +81,15 @@ const NavMenu = () => {
                     </Navigation>
                     <Navigation
                         onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
-                        id='home7'
+                        id='descobrirtom'
                     >
-                        <p className={isMouseUp == 'home7' ? 'navpara' : ""}> Descubra seu tom </p>
+                        <p className={isMouseUp == 'descobrirtom' ? 'navpara' : ""}> Descubra seu tom </p>
                     </Navigation>
                     <Navigation
                         onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
-                        id='home8'
+                        id='faleconosco'
                     >
-                        <p className={isMouseUp == 'home8' ? 'navpara' : ""}> Fale conosco </p>
+                        <p className={isMouseUp == 'faleconosco' ? 'navpara' : ""}> Fale conosco </p>
                     </Navigation>
                 </NavList>
                 {isHovered && (

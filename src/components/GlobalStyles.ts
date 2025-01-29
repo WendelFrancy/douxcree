@@ -7,5 +7,5 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const LogoDx = styled.img`
-    height: 36.5px;
+    height: 35px;
 `;
