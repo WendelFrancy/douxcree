@@ -25,11 +25,6 @@ export const Navigation = styled.li`
     font-size: .8rem;
     font-weight: 400;
     height: 100%;
-    width: 100%;
-    border-radius: 1rem;
-    &:hover{
-        background-color:rgb(236, 236, 236);
-    }
 `;
 
 export const MenuOptionsContainer = styled.section`

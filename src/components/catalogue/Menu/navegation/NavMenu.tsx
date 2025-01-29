@@ -8,69 +8,86 @@ const NavMenu = () => {
     const [isHovered, setisHovered] = useState(false);
     const mouseEnter = () => {
         setisHovered(true);
+        const menuParag = document.querySelectorAll('navpara');
+        if (isHovered) {
+            (menuParag[1] as HTMLElement).style.borderBottomColor = 'blue'
+        }
     }
     const mouseLeaves = () => {
         setisHovered(false);
     }
 
-
-    /* ele chama o default, mas não altera o estado ao passarmos o mouse */
     const [optionsTitle, setOptionsTitle] = useState('default');
-    const handleHover = (e: React.MouseEvent<HTMLDivElement>) => {
-        const newTitle = e.currentTarget.id; 
+    const handleHover = (e: React.MouseEvent<HTMLElement>) => {
+        const newTitle = e.currentTarget.id;
         if (newTitle) {
-            setOptionsTitle(newTitle); 
-            console.log('novo titulo')
-        }else {
+            setOptionsTitle(newTitle);
 
+        } else {
             console.log('falhou')
         }
-    };    
+    };
 
 
     return (
         <>
-            <NavBar>
+            <NavBar
+                onMouseLeave={() => mouseLeaves()}
+            >
                 <NavList>
-                    <Navigation 
-                    onMouseEnter={() => {mouseEnter(), handleHover}}
-                    id='home1'
-                    > Home </Navigation>
                     <Navigation
-                    onMouseEnter={() => {mouseEnter(), handleHover}}
-                    id='home2'
-                    >Produtos</Navigation>
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        id='home'
+                    >
+                        <p className='navpara'>Home</p>
+                    </Navigation>
                     <Navigation
-                    onMouseEnter={() => {mouseEnter(), handleHover}}
-                    data-title='home3'
-                    >Home</Navigation>
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        id='produtos'
+                    >
+                        <p className='navpara'>Produtos</p>
+                    </Navigation>
                     <Navigation
-                    onMouseEnter={() => {mouseEnter(), handleHover}}
-                    data-title='home4'
-                    >Produtos</Navigation>
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        id='home2'
+                    >
+                        <p className='navpara'> Home </p>
+                    </Navigation>
                     <Navigation
-                    onMouseEnter={() => mouseEnter()}
-                    data-title='home5'
-                    >Home</Navigation>
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        id='produtos2'
+                    >
+                        <p className='navpara'> Produtos </p>
+                    </Navigation>
                     <Navigation
-                    onMouseEnter={() => mouseEnter()}
-                    data-tile='home6'
-                    >Produtos</Navigation>
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        id='home5'
+                    >
+                        <p className='navpara'> Home </p>
+                    </Navigation>
                     <Navigation
-                    onMouseEnter={() => mouseEnter()}
-                    data-title='home7'
-                    >Descubra seu tom</Navigation>
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        id='home6'
+                    >
+                        <p className='navpara'> Produtos </p>
+                    </Navigation>
                     <Navigation
-                    onMouseEnter={() => mouseEnter()}
-                    data-title='home8'
-                    >Fale conosco</Navigation>
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        id='home7'
+                    >
+                        <p className='navpara'> Descubra seu tom </p>
+                    </Navigation>
+                    <Navigation
+                        onMouseEnter={(e) => { mouseEnter(); handleHover(e); }}
+                        id='home8'
+                    >
+                        <p className='navpara'> Fale conosco </p>
+                    </Navigation>
                 </NavList>
                 {isHovered && (
-                <MenuOptionsContainer onMouseLeave={() => mouseLeaves()}>
-                    <Options 
-                    optionTitle= {optionsTitle}
-                    />
-                </MenuOptionsContainer>
+                    <MenuOptionsContainer onMouseLeave={() => mouseLeaves()}>
+                        <Options optionTitle={optionsTitle} />
+                    </MenuOptionsContainer>
                 )}
             </NavBar>
         </>
