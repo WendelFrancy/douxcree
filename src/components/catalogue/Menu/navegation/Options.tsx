@@ -10,12 +10,12 @@ const Options: React.FC<Opcoes> = (props) =>  {
     const optionsMap: Record<string, JSX.Element> = {
         home: (
             <>
-            <OptionsTitle> Bem vindo a Home </OptionsTitle>
+            <OptionsTitle> Bem-vindo a Home </OptionsTitle>
             </>
         ),
         produtos: (
             <>
-            <OptionsTitle> Bem vindo a Produtos </OptionsTitle>
+            <OptionsTitle> Bem-vindo a Produtos </OptionsTitle>
             </>
         ),
         faleconosco: (

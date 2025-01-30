@@ -1,17 +1,18 @@
 
 /* Trazer os estilos dos componentes Actions para a pasta actions, atualmente estão em StsCtgMenu */
-import { Actions, ActionsContainer } from "../StsCtgMenu"
+import { EnterAction, CartAction, ActionsContainer } from "../StsCtgMenu"
 
 const ActionsMenu = () => {
     return (
         <>
             <ActionsContainer>
-                <Actions>
+                <EnterAction>
                     <img src='src\assets\login.png'></img>
                     <p> Entrar </p>
-                </Actions>
-                
-                <Actions><img src='src\assets\cart.png'></img></Actions>
+                </EnterAction>
+                <CartAction> 
+                    <img src="src\assets\cart.png" alt="" />
+                </CartAction>
             </ActionsContainer>
         </>
     )

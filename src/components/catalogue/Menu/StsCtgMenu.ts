@@ -32,7 +32,7 @@ export const MenuContainer = styled.div`
     grid-template-rows: 6rem 3rem;
     align-items: center;
     position: fixed;
-    padding: 0 10%;
+    padding: 0 20%;
     width: 100%;
     background-color: white;
     box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
@@ -70,30 +70,44 @@ export const LogoName = styled.p`
     font-weight: 500;
 `;
 
-
-// Adicionar background-color para cada elemento filho dessa div.
-// Que são os botões de ação do menu.
 export const ActionsContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    &:hover{
-    background-color: yellow;
-    }
+
 `;
 
-export const Actions = styled.div`
+export const EnterAction = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    width: 1rem;
-    height: 3rem;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: yellow;
     img{ 
         height: 1.5rem;
     }
     p{
         font-size: .9rem;
+    }
+    &:hover{
+        cursor: pointer;
+        
+    }
+    
+`;
+
+export const CartAction = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20%;
+    border-radius: 2rem;
+    background-color: yellow;
+    img{
+        height: 1.5rem;
     }
     &:hover{
         cursor: pointer;
