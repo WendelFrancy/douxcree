@@ -6,8 +6,8 @@ export const SearchContainer = styled.form`
     grid-template-columns: 80% 20%;
     padding: .15rem .15rem .15rem 1.5rem;
     background-color: rgb(194, 194, 194, .2);
-    height: 3rem;
-    width: 100%;
+    height: 3.5rem;
+    width: 70%;
     border: 1px solid rgb(0,0,0,.3);
     border-radius: 1rem;
     @media screen and (max-width: 1440px){
@@ -21,7 +21,7 @@ export const SearchInput = styled.input`
     font-family: "Montserrat", serif;
     height: 100%;
     font-weight: 500;
-    font-size: .9rem;
+    font-size: 1rem;
     border: none;
     outline: none;
     background-color: unset;

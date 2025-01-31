@@ -6,6 +6,6 @@ import styled from "styled-components"
     FAZER ALTERAÇÃO NO PHOTOSHOP PARA EVITAR PROBLEMAS.
 */
 export const CtgBackground = styled.div`
+    margin: 0 auto;
     height: 200vh;
-    overflow: hidden;
 `;

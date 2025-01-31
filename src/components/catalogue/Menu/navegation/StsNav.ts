@@ -29,7 +29,7 @@ export const Navigation = styled.li`
     display: grid;
     place-items: center;
     font-family: "Montserrat", serif;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 400;
     height: 100%;
     .navpara{

@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 type MenuFrames = {
     changing: Keyframe;
     hoverBtn: Keyframe;
+    actionHover: Keyframe;
 }
 
 const changing = keyframes<MenuFrames>`
@@ -26,13 +27,25 @@ const hoverBtn = keyframes<MenuFrames>`
     }
 `;
 
+const actionCartHover = keyframes<MenuFrames>`
+    100%{
+        background-color: orange;
+    }
+`;
+
+const actionEnterHover = keyframes<MenuFrames>`
+    100%{
+        background-color: orange;
+    }
+`;
+
 export const MenuContainer = styled.div`
     z-index: 999999;
     display: grid;
-    grid-template-rows: 6rem 3rem;
+    grid-template-rows: 7rem 4rem;
     align-items: center;
     position: fixed;
-    padding: 0 20%;
+    padding: 0 2rem;
     width: 100%;
     background-color: white;
     box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
@@ -50,10 +63,8 @@ export const MenuContainer = styled.div`
 
 export const FixedMenu = styled.menu`
     position: relative;
-    display: grid;
-    grid-template-columns: 20% 50% 30%;
-    margin: 0 10%;
-    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
     font-family: "Montserrat", serif;
 `;
 
@@ -66,15 +77,15 @@ export const DxContainer = styled.div`
 `;
 
 export const LogoName = styled.p`
-    font-size: .9rem;
+    font-size: 1rem;
     font-weight: 500;
 `;
 
 export const ActionsContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: center;
+    gap: 2rem;
 `;
 
 export const EnterAction = styled.div`
@@ -82,9 +93,9 @@ export const EnterAction = styled.div`
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    height: 100%;
-    border-radius: 2rem;
-    background-color: yellow;
+    height: 80%;
+    width: 7rem;
+    border-radius: 1rem;
     img{ 
         height: 1.5rem;
     }
@@ -93,7 +104,8 @@ export const EnterAction = styled.div`
     }
     &:hover{
         cursor: pointer;
-        
+        animation: ${actionEnterHover} .2s linear;
+        animation-fill-mode: forwards;
     }
     
 `;
@@ -102,24 +114,27 @@ export const CartAction = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 20%;
-    border-radius: 2rem;
-    background-color: yellow;
+    height: 80%;
+    width: 5rem;
+    border-radius: 1rem;
     img{
         height: 1.5rem;
     }
     &:hover{
         cursor: pointer;
+        animation: ${actionCartHover} .2s linear;
+        animation-fill-mode: forwards;
     }
 `;
 
 export const PromoContainer = styled.div`
+    position: absolute;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    align-items: center;
     background-color: #f7bf9a;
-    margin-top: 9rem;
+    width: 100%;
+    padding: 9rem 0 0 0;
 `;
 
 export const Promotions = styled.img`
