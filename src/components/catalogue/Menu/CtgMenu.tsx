@@ -14,6 +14,9 @@ const CtgMenu: React.FC = () => {
         <>
             <CtgBackground>
                 <InfoMenu>
+                    {/* TERMINAR DE PENSAR O QUE VIRÁ NESSE MENU DE FATO
+                        AVALIAR A OPACIDADE DO MENU, TÁ NUMA OPACITY BOA OU MELHOR TROCAR?
+                    */}
                     <InfoLangContainer>
                         <Globe
                             src='src/assets/landingpage/planet.png' alt='Planet Icon'

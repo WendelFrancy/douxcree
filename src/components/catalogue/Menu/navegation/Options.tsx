@@ -8,9 +8,9 @@ type Opcoes = {
 const Options: React.FC<Opcoes> = (props) =>  {
 
     const optionsMap: Record<string, JSX.Element> = {
-        home: (
+        promocoes: (
             <>
-            <OptionsTitle> Bem-vindo a Home </OptionsTitle>
+            <OptionsTitle> Principais Promoções! </OptionsTitle>
             </>
         ),
         produtos: (
@@ -18,9 +18,9 @@ const Options: React.FC<Opcoes> = (props) =>  {
             <OptionsTitle> Bem-vindo a Produtos </OptionsTitle>
             </>
         ),
-        faleconosco: (
+        rosto: (
             <>
-            <OptionsTitle> Fale Conosco </OptionsTitle>
+            <OptionsTitle> Tudo para seu rosto! </OptionsTitle>
             </>
         ),
         descobrirtom: (

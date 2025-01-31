@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import { hoverBtn, changingMenu, navBar } from "./KeyframesMenu";
 
+// AS ANIMAÇÕES DE HOVER NO MENU ESTÃO ÓTIMAS, MAS PARA UM MELHOR UI EU PRECISO DE ANIMAÇÕES
+// REVERSAS TAMBÉM! AVALIAR MELHORES ALTERNATIVAS PARA "UNHOVER"/"ONMOUSELEAVE"
+
 export const InfoMenu = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,.7);
     width: 100%;
     height: 2rem;
     color: white;

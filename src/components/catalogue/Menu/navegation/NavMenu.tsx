@@ -40,12 +40,15 @@ const NavMenu = () => {
                 className='navBar'
             >
                 <NavList>
+                    {/* ALTERAR O MENU DE NAVEGAÇÃO PARA UM MENU REAL OFICIAL!!!
+                        REFS: O BOTICARIO, NATURA, FRANCINY, MARIMARIA, KERASTASE
+                    */}
                     <Navigation
                         onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
-                        id='home'
+                        id='promocoes'
                     >
-                        <p className={isMouseUp === 'home' ? 'navpara' : ''}>
-                            Home
+                        <p className={isMouseUp === 'promocoes' ? 'navpara' : ''}>
+                            Promoções
                         </p>
                     </Navigation>
                     <Navigation
@@ -64,9 +67,9 @@ const NavMenu = () => {
                     </Navigation>
                     <Navigation
                         onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
-                        id='produtos2'
+                        id='rosto'
                     >
-                        <p className={isMouseUp == 'produtos2' ? 'navpara' : ""}> Produtos </p>
+                        <p className={isMouseUp == 'rosto' ? 'navpara' : ""}> Rosto </p>
                     </Navigation>
                     <Navigation
                         onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}

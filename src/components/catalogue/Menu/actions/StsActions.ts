@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { actionCartHover, actionEnterHover } from "../KeyframesMenu";
 
+// AJUSTAR NO PHOTOSHOP O TAMANHO DAS IMAGENS DOS ACTIONS PARA UM TAMANHO FIXO!!
+
 export const ActionsContainer = styled.div`
     display: flex;
     align-items: center;
