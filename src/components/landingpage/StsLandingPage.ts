@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// ESTOU CONSIDERANDO USAR O BANNER DA DOUXCREE NESSA LANDING PAGE 
+// E ADICIONAR FUNCIONALIDADE A UM BOTÃO GRANDE QUE LEVE DIRETO PARA O CATÁLOGO
+// DENTRO DAQUELE RETÂNGULO LARANJA COM BAIXA OPACIDADE.
+
 export const LpBackground = styled.div`
     display: grid;
     place-items: center;

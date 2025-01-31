@@ -1,5 +1,31 @@
 import styled from "styled-components";
-import { hoverBtn, changingMenu } from "./KeyframesMenu";
+import { hoverBtn, changingMenu, navBar } from "./KeyframesMenu";
+
+export const InfoMenu = styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 2rem;
+    color: white;
+    padding: 0 2rem;
+    font-size: .8rem;
+    font-family: "Montserrat", serif;
+`;
+
+export const InfoLangContainer = styled.div`
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    &:hover{
+        cursor: pointer;
+    }
+`;
+
+export const ParaTopMenu = styled.p`
+    font-weight: 500;
+`;
 
 export const MenuContainer = styled.div`
     z-index: 999999;
@@ -18,8 +44,12 @@ export const MenuContainer = styled.div`
                 animation: ${hoverBtn} .2s linear;
                 animation-fill-mode: forwards;
             }  
-            .searchContainer, navBar{
-                animation: ${changingMenu} .3s linear;
+            .searchContainer{
+                animation: ${changingMenu} .1s linear;
+                animation-fill-mode: forwards;
+            }
+            .navBar{
+                animation: ${navBar} .2s linear;
                 animation-fill-mode: forwards;
             }
         }
@@ -28,8 +58,9 @@ export const MenuContainer = styled.div`
 export const FixedMenu = styled.menu`
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     font-family: "Montserrat", serif;
+    gap: 4rem;
 `;
 
 export const DxContainer = styled.div`
@@ -38,23 +69,24 @@ export const DxContainer = styled.div`
     gap: .5rem;
     align-items: center;
     justify-content: center;
+    .logoName{
+        text-decoration: none;
+        color: black;
+    }
 `;
 
 export const LogoName = styled.p`
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 300;
 `;
 
 export const PromoContainer = styled.div`
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 80vh;
     width: 100%;
 `;
 
 export const Promotions = styled.img`
-    height: 100vh;
+    width: 100%;
 `;
 
 

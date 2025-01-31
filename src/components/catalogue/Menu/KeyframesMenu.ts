@@ -5,6 +5,7 @@ type MenuFrames = {
     hoverBtn: Keyframe;
     actionHover: Keyframe;
     navMotion: Keyframe;
+    navBar: Keyframe;
 }
 
 export const changingMenu = keyframes<MenuFrames>`
@@ -12,6 +13,7 @@ export const changingMenu = keyframes<MenuFrames>`
         background-color: white;  
     }
 `;
+
 
 export const hoverBtn = keyframes<MenuFrames>`
     0%{ 
@@ -44,5 +46,14 @@ export const navMotion = keyframes<MenuFrames>`
     100%{
         border-bottom: 2px solid #fb8b24;
         padding-bottom: 3px;
+    }
+`;
+
+export const navBar = keyframes<MenuFrames>`
+    0%{
+       border-top: 1px solid rgb(0,0,0,.2);
+    }
+    100%{
+        border-top: 0.1px solid rgb(0,0,0,.0);
     }
 `;

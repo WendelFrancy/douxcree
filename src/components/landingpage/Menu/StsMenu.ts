@@ -40,7 +40,7 @@ const Rotating = keyframes`
 
 
 export const Globe = styled.img`
-    height: 2rem;
+    height: ${(props) => props.height || '2rem'};
     animation: ${Rotating} 60s linear infinite;
 `;
 

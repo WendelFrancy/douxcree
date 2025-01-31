@@ -1,35 +1,49 @@
 import React from 'react'
 import { CtgBackground } from '../StsCatalogue'
-import { DxContainer, FixedMenu, /* GlobeContainer */ LogoName, MenuContainer, PromoContainer, Promotions } from './StsCtgMenu'
-import { LogoDx } from '../../GlobalStyles'
+import { DxContainer, FixedMenu, InfoLangContainer, InfoMenu, /* GlobeContainer */ LogoName, MenuContainer, ParaTopMenu, PromoContainer, Promotions } from './StsCtgMenu'
 import ActionsMenu from './actions/ActionsMenu'
 import { Link } from 'react-router-dom'
 /*import NavMenu from './navegation/NavMenu'*/
 import SearchBar from './search/SearchBar'
 import NavMenu from './navegation/NavMenu'
+import { Globe } from '../../landingpage/Menu/StsMenu'
 /* import { Globe } from '../../landingpage/Menu/StsMenu' */
 
 const CtgMenu: React.FC = () => {
     return (
         <>
             <CtgBackground>
+                <InfoMenu>
+                    <InfoLangContainer>
+                        <Globe
+                            src='src/assets/landingpage/planet.png' alt='Planet Icon'
+                            height={'1rem'}
+                        />
+                        <ParaTopMenu> Acessibilidade </ParaTopMenu>
+                    </InfoLangContainer>
+                    <InfoLangContainer>
+                        <Globe
+                            src='src/assets/landingpage/planet.png' alt='Planet Icon'
+                            height={'1rem'}
+                        />
+                        <ParaTopMenu> Idioma </ParaTopMenu>
+                    </InfoLangContainer>
+                    <ParaTopMenu> Fale Conosco </ParaTopMenu>
+                </InfoMenu>
                 <MenuContainer>
                     <FixedMenu>
                         <DxContainer>
-                            <Link to="/">
-                                <LogoDx
-                                    src='src\assets\landingpage\DXLOGO.png'
-                                />
+                            <Link to="/" className='logoName'>
+                                <LogoName>DouxCreé</LogoName>
                             </Link>
-                            <LogoName>DouxCreé</LogoName>
                         </DxContainer>
                         <SearchBar />
                         {/*<NavMenu/>*/}
                         <ActionsMenu />
                     </FixedMenu>
-                    <NavMenu/>
+                    <NavMenu />
                 </MenuContainer>
-                    {/* Procurar imagens grandes e de boa qualidade para colocar como promoções em background
+                {/* Procurar imagens grandes e de boa qualidade para colocar como promoções em background
                         Será que vale a pena fazer uma promo personalizada com a logo da DouxCreé no Photoshop? Talvez.
                     */}
                 <PromoContainer>

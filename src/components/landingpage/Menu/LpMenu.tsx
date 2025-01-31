@@ -40,6 +40,7 @@ const LpMenu = () => {
                         <Globe
                             src='src/assets/landingpage/planet.png' alt='Planet Icon'
                             onClick={() => setChooseLang(true)}
+                            height={''}
                         />
                         {chooseLang && (
                             <BigGlobeContainer>
