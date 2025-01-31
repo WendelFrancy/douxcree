@@ -1,6 +1,6 @@
 
 /* Trazer os estilos dos componentes Actions para a pasta actions, atualmente estão em StsCtgMenu */
-import { EnterAction, CartAction, ActionsContainer } from "../StsCtgMenu"
+import { EnterAction, CartAction, ActionsContainer } from "./StsActions"
 
 const ActionsMenu = () => {
     return (

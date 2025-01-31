@@ -1,43 +1,5 @@
-import styled, { keyframes } from "styled-components";
-
-type MenuFrames = {
-    changing: Keyframe;
-    hoverBtn: Keyframe;
-    actionHover: Keyframe;
-}
-
-const changing = keyframes<MenuFrames>`
-    100%{
-        background-color: white;  
-    }
-`;
-
-const hoverBtn = keyframes<MenuFrames>`
-    0%{ 
-        background-color: unset;
-        width: 50%;
-    }
-    50%{
-        border-radius: 1.4rem; 
-    }
-    100%{
-        background-color: #fb8b24;
-        width: 100%;
-        border-radius: .9rem;        
-    }
-`;
-
-const actionCartHover = keyframes<MenuFrames>`
-    100%{
-        background-color: orange;
-    }
-`;
-
-const actionEnterHover = keyframes<MenuFrames>`
-    100%{
-        background-color: orange;
-    }
-`;
+import styled from "styled-components";
+import { hoverBtn, changingMenu } from "./KeyframesMenu";
 
 export const MenuContainer = styled.div`
     z-index: 999999;
@@ -47,15 +9,17 @@ export const MenuContainer = styled.div`
     position: fixed;
     padding: 0 2rem;
     width: 100%;
-    background-color: white;
+    background-color: unset;
     box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
         &:hover{
+            animation: ${changingMenu} .3s linear;
+            animation-fill-mode: forwards;
             .btnSearch{
                 animation: ${hoverBtn} .2s linear;
                 animation-fill-mode: forwards;
             }  
-            .searchContainer{
-                animation: ${changing} .3s linear;
+            .searchContainer, navBar{
+                animation: ${changingMenu} .3s linear;
                 animation-fill-mode: forwards;
             }
         }
@@ -81,64 +45,16 @@ export const LogoName = styled.p`
     font-weight: 500;
 `;
 
-export const ActionsContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-`;
-
-export const EnterAction = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    height: 80%;
-    width: 7rem;
-    border-radius: 1rem;
-    img{ 
-        height: 1.5rem;
-    }
-    p{
-        font-size: .9rem;
-    }
-    &:hover{
-        cursor: pointer;
-        animation: ${actionEnterHover} .2s linear;
-        animation-fill-mode: forwards;
-    }
-    
-`;
-
-export const CartAction = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-    width: 5rem;
-    border-radius: 1rem;
-    img{
-        height: 1.5rem;
-    }
-    &:hover{
-        cursor: pointer;
-        animation: ${actionCartHover} .2s linear;
-        animation-fill-mode: forwards;
-    }
-`;
-
 export const PromoContainer = styled.div`
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f7bf9a;
     width: 100%;
-    padding: 9rem 0 0 0;
 `;
 
 export const Promotions = styled.img`
-    height: 60vh;
+    height: 100vh;
 `;
 
 

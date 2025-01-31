@@ -1,11 +1,5 @@
-import styled, { keyframes } from 'styled-components'
-
-const navMotion = keyframes`
-    100%{
-        border-bottom: 2px solid #fb8b24;
-        padding-bottom: 3px;
-    }
-`;
+import styled from 'styled-components'
+import { navMotion } from '../KeyframesMenu';
 
 export const NavBar = styled.nav`
     z-index: 1;
@@ -14,7 +8,6 @@ export const NavBar = styled.nav`
     height: 100%;
     width: 100%;
     border-top: 1px solid rgb(0,0,0,.2);
-    background-color: white;
 `;
 
 export const NavList = styled.ul`

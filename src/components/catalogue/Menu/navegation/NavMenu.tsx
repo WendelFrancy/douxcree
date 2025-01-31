@@ -37,6 +37,7 @@ const NavMenu = () => {
         <>
             <NavBar
                 onMouseLeave={() => mouseLeaves()}
+                className='navBar'
             >
                 <NavList>
                     <Navigation
