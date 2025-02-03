@@ -10,8 +10,9 @@ export const SearchContainer = styled.form`
     width: 40%;
     border: 1px solid rgb(0,0,0,.3);
     border-radius: 1rem;
-    @media screen and (max-width: 1440px){
+    @media screen and (min-width: 1440px){
         grid-template-columns: 85% 15%;
+        width: 30%;
     }
 `;
 

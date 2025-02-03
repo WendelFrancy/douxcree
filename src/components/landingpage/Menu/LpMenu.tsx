@@ -29,16 +29,16 @@ const LpMenu = () => {
             <LpSectionBg>
                 <LpMenuContainer>
                     <LogoDx
-                        src='src/assets/landingpage/DXLOGO.png' alt='Douxcreé Logo'
+                        src='src/assets/landingpage/dxlogoblack.png' alt='Douxcreé Logo'
                     />
                     <CursiveContainer>
                         <CursiveLogo
-                            src='src/assets/landingpage/logodx.png' alt='Douxcreé Cursive Logo'
+                            src='src/assets/landingpage/douxcreeblack.png' alt='Douxcreé Cursive Logo'
                         />
                     </CursiveContainer>
                     <ChangeIdiome>
                         <Globe
-                            src='src/assets/landingpage/planet.png' alt='Planet Icon'
+                            src='src/assets/landingpage/planetblack.png' alt='Planet Icon'
                             onClick={() => setChooseLang(true)}
                             height={''}
                         />
@@ -48,7 +48,7 @@ const LpMenu = () => {
                                     ref={langRef}
                                 >
                                     <BigGlobe
-                                        src='src/assets/landingpage/planet.png' alt='Planet Icon'
+                                        src='src\assets\landingpage\planetblack.png' alt='Planet Icon'
                                     />
                                     <Countrys />
                                 </BigGlobeBox>

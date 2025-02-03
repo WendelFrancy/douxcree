@@ -19,14 +19,14 @@ const CtgMenu: React.FC = () => {
                     */}
                     <InfoLangContainer>
                         <Globe
-                            src='src/assets/landingpage/planet.png' alt='Planet Icon'
+                            src='src/assets/landingpage/planetwhite.png' alt='Planet Icon'
                             height={'1rem'}
                         />
                         <ParaTopMenu> Acessibilidade </ParaTopMenu>
                     </InfoLangContainer>
                     <InfoLangContainer>
                         <Globe
-                            src='src/assets/landingpage/planet.png' alt='Planet Icon'
+                            src='src/assets/landingpage/planetwhite.png' alt='Planet Icon'
                             height={'1rem'}
                         />
                         <ParaTopMenu> Idioma </ParaTopMenu>
