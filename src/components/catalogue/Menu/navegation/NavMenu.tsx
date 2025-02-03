@@ -47,7 +47,7 @@ const NavMenu = () => {
                         onMouseEnter={(e) => { mouseEnter(); handleHover(e); mouseUp(e) }}
                         id='promocoes'
                     >
-                        <p className={isMouseUp === 'promocoes' ? 'navpara' : ''}>
+                        <p className={isMouseUp == 'promocoes' ? 'navpara' : ''}>
                             Promoções
                         </p>
                     </Navigation>

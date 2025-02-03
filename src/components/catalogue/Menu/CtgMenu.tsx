@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import SearchBar from './search/SearchBar'
 import NavMenu from './navegation/NavMenu'
 import { Globe } from '../../landingpage/Menu/StsMenu'
+import TesteDeScroll from '../Body/teste/TesteDeScroll'
 /* import { Globe } from '../../landingpage/Menu/StsMenu' */
 
 const CtgMenu: React.FC = () => {
@@ -52,6 +53,8 @@ const CtgMenu: React.FC = () => {
                 <PromoContainer>
                     <Promotions src='src\assets\douxcreeimg.png' />
                 </PromoContainer>
+
+                <TesteDeScroll/>
             </CtgBackground>
         </>
     )
