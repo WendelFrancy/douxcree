@@ -1,4 +1,7 @@
-import { CTABtn, CTAPara } from './StsCTA'
+
+
+
+{/*import { CTABtn, CTAPara } from './StsCTA'
 import { LpSectionBg } from '../StsLandingPage'
 import { Link } from 'react-router-dom'
 
@@ -20,3 +23,4 @@ const CTA = () => {
 }
 
 export default CTA
+*/}

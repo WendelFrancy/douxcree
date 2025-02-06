@@ -1,5 +1,7 @@
-import styled, { keyframes } from "styled-components";
 
+
+/*
+import styled, { keyframes } from "styled-components";
 
 export const LpMenuContainer = styled.div`
     display: flex;
@@ -99,3 +101,4 @@ export const CursiveTitle = styled.h2`
     font-size: 2.1rem;
     color: #14213D;
 `;
+*/

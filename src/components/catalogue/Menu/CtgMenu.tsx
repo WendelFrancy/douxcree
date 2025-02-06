@@ -1,39 +1,16 @@
 import React from 'react'
 import { CtgBackground } from '../StsCatalogue'
-import { DxContainer, FixedMenu, InfoLangContainer, InfoMenu, /* GlobeContainer */ LogoName, MenuContainer, ParaTopMenu, PromoContainer, Promotions } from './StsCtgMenu'
+import { DxContainer, FixedMenu, LogoName, MenuContainer, PromoContainer, Promotions } from './StsCtgMenu'
 import ActionsMenu from './actions/ActionsMenu'
 import { Link } from 'react-router-dom'
-/*import NavMenu from './navegation/NavMenu'*/
 import SearchBar from './search/SearchBar'
 import NavMenu from './navegation/NavMenu'
-import { Globe } from '../../landingpage/Menu/StsMenu'
 import TesteDeScroll from '../Body/teste/TesteDeScroll'
-/* import { Globe } from '../../landingpage/Menu/StsMenu' */
 
 const CtgMenu: React.FC = () => {
     return (
         <>
             <CtgBackground>
-                <InfoMenu>
-                    {/* TERMINAR DE PENSAR O QUE VIRÁ NESSE MENU DE FATO
-                        AVALIAR A OPACIDADE DO MENU, TÁ NUMA OPACITY BOA OU MELHOR TROCAR?
-                    */}
-                    <InfoLangContainer>
-                        <Globe
-                            src='src/assets/landingpage/planetwhite.png' alt='Planet Icon'
-                            height={'1rem'}
-                        />
-                        <ParaTopMenu> Acessibilidade </ParaTopMenu>
-                    </InfoLangContainer>
-                    <InfoLangContainer>
-                        <Globe
-                            src='src/assets/landingpage/planetwhite.png' alt='Planet Icon'
-                            height={'1rem'}
-                        />
-                        <ParaTopMenu> Idioma </ParaTopMenu>
-                    </InfoLangContainer>
-                    <ParaTopMenu> Fale Conosco </ParaTopMenu>
-                </InfoMenu>
                 <MenuContainer>
                     <FixedMenu>
                         <DxContainer>
@@ -42,7 +19,6 @@ const CtgMenu: React.FC = () => {
                             </Link>
                         </DxContainer>
                         <SearchBar />
-                        {/*<NavMenu/>*/}
                         <ActionsMenu />
                     </FixedMenu>
                     <NavMenu />
@@ -54,7 +30,7 @@ const CtgMenu: React.FC = () => {
                     <Promotions src='src\assets\douxcreeimg.png' />
                 </PromoContainer>
 
-                <TesteDeScroll/>
+                <TesteDeScroll />
             </CtgBackground>
         </>
     )

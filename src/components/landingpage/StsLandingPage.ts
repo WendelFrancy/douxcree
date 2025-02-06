@@ -4,6 +4,13 @@ import styled from "styled-components";
 // E ADICIONAR FUNCIONALIDADE A UM BOTÃO GRANDE QUE LEVE DIRETO PARA O CATÁLOGO
 // DENTRO DAQUELE RETÂNGULO LARANJA COM BAIXA OPACIDADE.
 
+export const BgLandingPage = styled.img`
+    height: 100vh;
+    width: 100%;
+`;
+
+
+/*
 export const LpBackground = styled.div`
     display: grid;
     place-items: center;
@@ -41,3 +48,4 @@ export const LpSectionBg = styled.section`
     box-shadow: 0px 2px 1px 1px rgb(0,0,0,.25);
     border-radius: 3rem;
 `;
+*/

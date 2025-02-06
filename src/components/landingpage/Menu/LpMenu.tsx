@@ -1,4 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+
+
+
+{/*import { useEffect, useRef, useState } from 'react';
 import { ChangeIdiome, CursiveContainer, CursiveLogo, CursiveTitle, 
 LpMenuContainer, Globe, BigGlobe, BigGlobeBox, BigGlobeContainer, Countrys } from './StsMenu'
 import { LogoDx } from '../../GlobalStyles';
@@ -63,3 +66,4 @@ const LpMenu = () => {
 }
 
 export default LpMenu
+*/}
