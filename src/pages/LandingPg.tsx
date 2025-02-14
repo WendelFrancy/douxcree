@@ -1,9 +1,9 @@
-import { BodyContainer, Brushes, LpBackground } from '../components/landingpage/StsLandingPage'
-import CTA from '../components/landingpage/CallToActionSection/CTA';
-import LpMenu from '../components/landingpage/Menu/LpMenu';
+import { /* BodyContainer, Brushes, LpBackground */ } from '../components/landingpage/StsLandingPage'
+import { /*CTA*/ } from '../components/landingpage/callToActionSection/CTA';
+import { /*LpMenu*/ } from '../components/landingpage/menu/LpMenu';
 
 
-const LandingPg = () => {
+/* const LandingPg = () => {
 
     return (
         <>
@@ -24,3 +24,5 @@ const LandingPg = () => {
 }
 
 export default LandingPg
+
+*/

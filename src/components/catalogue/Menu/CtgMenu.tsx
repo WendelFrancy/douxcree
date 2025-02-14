@@ -1,11 +1,11 @@
 import React from 'react'
 import { CtgBackground } from '../StsCatalogue'
-import { DxContainer, FixedMenu, LogoName, MenuContainer, PromoContainer, Promotions } from './StsCtgMenu'
+import { DxContainer, FixedMenu, LogoName, MenuContainer } from './StsCtgMenu'
+import { PromoContainer, Promotions } from '../Body/StsCatBody'
 import ActionsMenu from './actions/ActionsMenu'
 import { Link } from 'react-router-dom'
 import SearchBar from './search/SearchBar'
 import NavMenu from './navegation/NavMenu'
-import TesteDeScroll from '../Body/teste/TesteDeScroll'
 
 const CtgMenu: React.FC = () => {
     return (
@@ -27,10 +27,8 @@ const CtgMenu: React.FC = () => {
                         Será que vale a pena fazer uma promo personalizada com a logo da DouxCreé no Photoshop? Talvez.
                     */}
                 <PromoContainer>
-                    <Promotions src='src\assets\douxcreeimg.png' />
+                    <Promotions src='' />
                 </PromoContainer>
-
-                <TesteDeScroll />
             </CtgBackground>
         </>
     )

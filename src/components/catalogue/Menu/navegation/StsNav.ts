@@ -26,7 +26,7 @@ export const Navigation = styled.li`
     font-weight: 400;
     height: 100%;
     .navpara{
-        animation: ${navMotion} .1s linear;
+        animation: ${navMotion} .3s ease-in-out;
         animation-fill-mode: forwards;
     }
 `;

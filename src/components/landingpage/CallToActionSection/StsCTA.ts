@@ -1,3 +1,5 @@
+
+/*
 import {styled} from "styled-components";
 
 export const CTAPara = styled.p`
@@ -24,7 +26,7 @@ export const CTABtn = styled.button`
         padding: 1rem 3rem;
     }
 `;
-
+*/
 
 
 
