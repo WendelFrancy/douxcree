@@ -24,7 +24,6 @@ export const Navigation = styled.li`
     font-family: "Montserrat", serif;
     font-size: .9rem;
     font-weight: 400;
-    margin-bottom: 1rem;
     height: 100%;
     .navpara{
         animation: ${navMotion} .1s ease-in-out;

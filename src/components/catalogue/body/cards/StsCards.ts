@@ -12,3 +12,14 @@ export const Card = styled.div`
     border-radius: .4rem;
     border: 1px solid rgba(0,0,0,.3);
 `;
+
+export const CardInfosContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    border-top: 1px solid black;
+`;
+
+export const CardValue = styled.p`
+    font-weight: 400;
+`;
