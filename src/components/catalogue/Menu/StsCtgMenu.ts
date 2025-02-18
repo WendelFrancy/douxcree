@@ -9,7 +9,6 @@ export const MenuContainer = styled.div`
     display: grid;
     grid-template-rows: 7rem 4rem;
     align-items: center;
-    position: fixed;
     padding: 0 2rem;
     width: 100%;
     background-color: white;

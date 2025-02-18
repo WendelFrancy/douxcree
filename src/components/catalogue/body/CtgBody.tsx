@@ -17,6 +17,7 @@ const CtgBody = () => {
                     </Promotions>
                 </PromoContainer>
                 <ProductContainer>
+                    
                     <Filters />
                     <Cards />
                 </ProductContainer>

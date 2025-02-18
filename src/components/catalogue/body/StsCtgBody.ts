@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FullBody = styled.div`
-    padding: 0 5%;
+    padding: 3rem 5% 0 5%;
 `;
 
 export const PromoContainer = styled.section`
@@ -17,7 +17,6 @@ export const Promotions = styled.div`
     font-family: "Montserrat", serif;
     font-weight: 500;
 
-    margin-top: 2rem;
     height: 10rem;
     width: 80%;
     background-color: rgba(0,0,0,0.05);
@@ -25,7 +24,9 @@ export const Promotions = styled.div`
 
 // Aqui vai precisar ser grid mesmo, pq senão não vai dar pra controlar o tamanho do aside.
 export const ProductContainer = styled.section`
-    display: flex;
-    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 3rem;
     gap: 3rem;
 `;
+

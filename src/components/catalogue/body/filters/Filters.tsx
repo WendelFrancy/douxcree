@@ -1,11 +1,19 @@
-import { SideBarContainer } from "./StsFilters";
+import { SideBarContainer, AsideContainer } from "./StsFilters";
 
 const Filters = () => {
     return (
         <>
-            <SideBarContainer>
+            <AsideContainer>
 
-            </SideBarContainer>
+                <SideBarContainer>
+                    <h1> Filtrar Valores</h1>
+                </SideBarContainer>
+
+                <SideBarContainer>
+                    <h1> Filtrar Categorias </h1>
+                </SideBarContainer>
+
+            </AsideContainer>
         </>
     )
 }
