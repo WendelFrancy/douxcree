@@ -11,7 +11,7 @@ export const MenuContainer = styled.div`
     align-items: center;
     padding: 0 2rem;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     box-shadow: 0 1px 2px 0 rgb(0,0,0,0.25);
         &:hover{
             animation: ${changingMenu} .3s linear;
@@ -35,7 +35,7 @@ export const FixedMenu = styled.menu`
     position: relative;
     display: flex;
     justify-content: center;
-    font-family: "Montserrat", serif;
+    background-color: unset;
     gap: 4rem;
 `;
 

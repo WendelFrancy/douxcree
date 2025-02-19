@@ -8,6 +8,7 @@ export const ActionsContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    font-family: "Montserrat", sans-serif;    
 `;
 
 export const EnterAction = styled.div`

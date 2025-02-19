@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const FullBody = styled.div`
     padding: 3rem 5% 0 5%;
+    background-color: #F7C5C5;
+    font-family: "Montserrat", sans-serif;
 `;
 
 export const PromoContainer = styled.section`
@@ -14,7 +16,6 @@ export const Promotions = styled.div`
     display: grid;
     place-items: center;
 
-    font-family: "Montserrat", serif;
     font-weight: 500;
 
     height: 10rem;

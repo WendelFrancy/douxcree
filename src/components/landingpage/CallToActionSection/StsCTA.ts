@@ -3,7 +3,6 @@
 import {styled} from "styled-components";
 
 export const CTAPara = styled.p`
-    font-family: "Montserrat", serif;
     font-size: 1rem;
     text-align: center;
     color: #14123D;
@@ -15,7 +14,6 @@ export const CTABtn = styled.button`
     background-color: #14213D;
     padding: 1rem 2rem;
     font-size: 1rem;
-    font-family: "Montserrat", serif;
     font-weight: 500;
     color: #EBEBEB;
     box-shadow: 0 0 15px 2px rgb(255, 240, 243, 0.25);

@@ -19,7 +19,6 @@ export const SearchContainer = styled.form`
 export const SearchInput = styled.input`
     align-self: center;
     text-align: start;
-    font-family: "Montserrat", serif;
     height: 100%;
     font-weight: 500;
     font-size: 1rem;
