@@ -16,6 +16,7 @@ export const NavList = styled.ul`
     justify-content: space-evenly;
     list-style: none;
     height: 100%;
+    color: #5B4430;
 `;
 
 export const Navigation = styled.li`
@@ -23,7 +24,7 @@ export const Navigation = styled.li`
     place-items: center;
     font-family: "Montserrat", serif;
     font-size: .9rem;
-    font-weight: 400;
+    font-weight: 500;
     height: 100%;
     .navpara{
         animation: ${navMotion} .1s ease-in-out;
