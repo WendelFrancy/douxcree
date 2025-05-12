@@ -24,7 +24,7 @@ export const hoverBtn = keyframes<MenuFrames>`
         border-radius: 1.4rem; 
     }
     100%{
-        background-color: #fb8b24;
+        background-color: #EBD4C4;
         width: 100%;
         border-radius: .9rem;        
     }
@@ -32,19 +32,19 @@ export const hoverBtn = keyframes<MenuFrames>`
 
 export const actionCartHover = keyframes<MenuFrames>`
     100%{
-        background-color:rgba(255, 168, 110, 0.3);
+        background-color: #EBD4C4;
     }
 `;
 
 export const actionEnterHover = keyframes<MenuFrames>`
     100%{
-        background-color: rgba(255, 168, 110, 0.3);
+        background-color: #EBD4C4;
     }
 `;
 
 export const navMotion = keyframes<MenuFrames>`
     100%{
-        border-bottom: 2px solid #fb8b24;
+        border-bottom: 2px solid rgb(221, 144, 183);
         padding-bottom: 3px;
     }
 `;
