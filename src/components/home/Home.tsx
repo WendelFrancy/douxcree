@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Menu />
-        <CallToAction />
+      <CallToAction />
     </>
   );
 };
