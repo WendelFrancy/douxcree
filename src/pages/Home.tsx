@@ -1,9 +1,10 @@
 import React from "react";
+import Menu from "../components/home/menu/Menu.tsx"
 
 const MainPage: React.FC = () => {
     return(
     <>
-        <h1>Teste</h1>
+        <Menu/>
     </>
     )
 }

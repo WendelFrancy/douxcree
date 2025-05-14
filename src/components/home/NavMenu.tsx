@@ -1,0 +1,38 @@
+import React from "react";
+import "./menu/styles/main.scss";
+
+const NavMenu: React.FC = () => {
+  return (
+    <>
+      <nav className="navMenu">
+        <a href="#">
+          {" "}
+          Início
+          <span></span>
+        </a>
+        <a href="#">
+          {" "}
+          Produtos
+          <span></span>
+        </a>
+        <a href="#">
+          {" "}
+          Coleções
+          <span></span>
+        </a>
+        <a href="#">
+          {" "}
+          Sobre nós
+          <span></span>
+        </a>
+        <a href="#">
+          {" "}
+          Contato
+          <span></span>
+        </a>
+      </nav>
+    </>
+  );
+};
+
+export default NavMenu;

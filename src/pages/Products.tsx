@@ -1,9 +1,9 @@
 import React from "react"
-import CtgMenu from "../components/catalogue/Menu/CtgMenu"
-import CtgBody from "../components/catalogue/body/CtgBody"
+import CtgMenu from "../components/products/menu/CtgMenu"
+import CtgBody from "../components/products/body/CtgBody"
 
 
-const Catalogue: React.FC = () => {
+const Products: React.FC = () => {
 
     return (
         <>
@@ -13,4 +13,4 @@ const Catalogue: React.FC = () => {
     )
 }
 
-export default Catalogue
+export default Products
