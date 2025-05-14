@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 1.5rem 5% 1rem 5%;
+    background-color: unset;
     #dxlogo{
         height: 36px;
         padding: 0 2.5rem;
@@ -25,9 +26,12 @@
     .userOptions{
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
         .iconOptions{
-            height: 24px;
+            height: 18px;
+            &:hover{
+                cursor: pointer;
+            }
         }
         button{
             display: flex;
@@ -42,6 +46,11 @@
             border: none;
             outline: none;
             border-radius: .3rem;
+            &:hover{
+                background-color: $menu-main-color;
+                opacity: .9;
+                cursor: pointer;
+            }
             img{
                 height: 1.3rem;
                 filter: invert(1);

@@ -1,10 +1,10 @@
 import React from "react";
-import Menu from "../components/home/menu/Menu.tsx"
+import Home from "../components/home/Home";
 
 const MainPage: React.FC = () => {
     return(
     <>
-        <Menu/>
+        <Home/>
     </>
     )
 }

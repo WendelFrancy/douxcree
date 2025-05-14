@@ -1,5 +1,5 @@
 import React from "react";
-import "./menu/styles/main.scss";
+import "./styles/main.scss";
 
 const NavMenu: React.FC = () => {
   return (
