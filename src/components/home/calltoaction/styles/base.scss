@@ -1,0 +1,46 @@
+@use "../../menu/styles/variables.scss" as *;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+section {
+  // Adicionar o gradient na section
+  display: flex;
+  #secContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    // Adicionar gradiente aqui também
+    font-family: "Playfair Display, serif";
+  }
+  p {
+    font-family: $main-font;
+  }
+  div {
+    display: flex;
+    gap: 2rem;
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: $main-font;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: white;
+      padding: 0.5rem 1rem;
+      background-color: $menu-main-color;
+      border: none;
+      outline: none;
+      border-radius: 0.3rem;
+      &:hover {
+        background-color: $menu-main-color;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      img {
+        height: 1.3rem;
+        filter: invert(1);
+      }
+    }
+  }
+}
