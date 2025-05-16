@@ -1,0 +1,12 @@
+@use "../../menu/styles/variables.scss" as *;
+
+@mixin btnTransition { 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;    
+}
+
+@mixin btnFontStyle {
+      font-family: $main-font;
+      font-size: 1.2em;
+      font-weight: 500;
+}
