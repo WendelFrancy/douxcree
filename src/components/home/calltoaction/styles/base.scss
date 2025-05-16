@@ -2,29 +2,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 section {
-  // Adicionar o gradient na section
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(rgb(254, 243, 199), rgb(255, 255, 255));
+  padding: 1.5rem 5%;
   #secContainer {
     display: flex;
     flex-direction: column;
-  }
-
-  h1 {
-    // Adicionar gradiente aqui também
-    font-family: "Playfair Display, serif";
-  }
-  p {
-    font-family: $main-font;
+    h1 {
+      font-family: "Playfair Display, serif";
+      span {
+        background-clip: text;
+        background-image: linear-gradient(to right, $gradient-color);
+        color: transparent;
+      }
+    }
+    p {
+      font-family: $main-font;
+    }
   }
   div {
     display: flex;
     gap: 2rem;
-    button {
+    .btnExplore {
       display: flex;
       align-items: center;
       gap: 0.4rem;
       font-family: $main-font;
-      font-size: 0.9rem;
+      font-size: 1.2em;
       font-weight: 500;
       color: white;
       padding: 0.5rem 1rem;
@@ -38,8 +46,23 @@ section {
         cursor: pointer;
       }
       img {
-        height: 1.3rem;
+        height: .8rem;
         filter: invert(1);
+      }
+    }
+    .btnHistory {
+      font-family: $main-font;
+      font-size: 1.2em;
+      font-weight: 500;
+      color: hsl(42 87% 55%);
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      outline: none;
+      border-color: hsl(42 87% 55%);
+      border-radius: 0.3rem;
+      &:hover {
+        background-color: hsla(340, 82%, 52%, .1);
+        cursor: pointer;
       }
     }
   }
