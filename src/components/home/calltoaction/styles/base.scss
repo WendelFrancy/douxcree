@@ -18,7 +18,7 @@ section {
         font-family: "Playfair Display, serif";
         font-weight: 600;
         font-size: 4em;
-        line-height: 1em;
+        line-height: .9em;
         span {
           background-clip: text;
           background-image: linear-gradient(to right, $gradient-color);
@@ -27,12 +27,12 @@ section {
       }
       p {
         font-family: $main-font;
-        font-size: 1.2em;
+        font-size: 1.1em;
       }
     }
     div {
       display: flex;
-      gap: 2rem;
+      gap: 1rem;
       margin-top: 2rem;
       .btnExplore {
         display: flex;
@@ -40,7 +40,6 @@ section {
         gap: 0.4rem;
         @include btnFontStyle();
         color: white;
-        padding: 0.5rem 1.5rem;
         background-color: $menu-main-color;
         border: none;
         outline: none;
@@ -60,7 +59,6 @@ section {
         @include btnFontStyle();
         @include btnTransition();
         color: hsl(42 87% 55%);
-        padding: 0.5rem 1.5rem;
         background-color: transparent;
         outline: none;
         border-color: hsl(42 87% 55%);

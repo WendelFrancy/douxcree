@@ -11,7 +11,7 @@ const CallToAction: React.FC = () => {
               <span>Beleza Francesa</span> para Mulheres Sofisticadas
             </h1>
             <p>
-              Descubra o segredo da beleza francesa com nossa linha exclusiva de <br/>
+              Descubra o segredo da beleza francesa com nossa linha exclusiva de
               cosméticos de luxo, formulados com ingredientes naturais da
               França.
             </p>

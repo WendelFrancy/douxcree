@@ -22,7 +22,7 @@ const NavMenu: React.FC = () => {
         </a>
         <a href="#">
           {" "}
-          Sobre nós
+          Sobre Nós
           <span></span>
         </a>
         <a href="#">
