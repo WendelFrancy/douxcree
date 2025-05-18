@@ -4,7 +4,7 @@ import "./styles/main.scss";
 const CallToAction: React.FC = () => {
   return (
     <>
-      <section>
+      <section id="homeSection">
         <div id="homeContainer">
           <div id="homeTextContainer">
             <h1>
@@ -15,19 +15,19 @@ const CallToAction: React.FC = () => {
               cosméticos de luxo, formulados com ingredientes naturais da
               França.
             </p>
+            <div id="homeBtnContainer">
+              <button className="btnExplore">
+                Explorar Produtos
+                <img
+                  src="src\assets\arrow-pointing-right_1131.png"
+                  alt="Seta para direita"
+                />
+              </button>
+              <button className="btnHistory"> Nossa História </button>
+            </div>
           </div>
-          <div>
-            <button className="btnExplore">
-              Explorar Produtos
-              <img
-                src="src\assets\arrow-pointing-right_1131.png"
-                alt="Seta para direita"
-              />
-            </button>
-            <button className="btnHistory"> Nossa História </button>
-          </div>
-        </div>
         <img id="homeImage" src="src\assets\home-img.jpg" alt="Home Image" />
+        </div>
       </section>
     </>
   );

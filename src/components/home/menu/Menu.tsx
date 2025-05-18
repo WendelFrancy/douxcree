@@ -6,11 +6,13 @@ import "./styles/main.scss";
 const Menu: React.FC = () => {
   return (
     <>
-    <menu id="fixedMenu">
-      <img id="dxlogo" src="src\assets\landingpage\dxlogoblack.png" alt="Douxcree" />
-      <NavMenu/>
-      <UserOptions/>
-    </menu>
+    <section id="menuContainer">
+      <menu id="fixedMenu">
+        <img id="dxlogo" src="src\assets\landingpage\dxlogoblack.png" alt="Douxcree" />
+        <NavMenu/>
+        <UserOptions/>
+      </menu>
+    </section>
     </>
   );
 };

@@ -1,0 +1,43 @@
+@use "../../globalstyles/mixins.scss" as *;
+@use "../../globalstyles/variables.scss" as *;
+
+#WDXSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    max-width: 1440px;
+    padding: 1.5rem 2%;
+    gap: 2rem;
+    #WDXtxtContainer {
+        text-align: center;
+        width: 70%;
+        @media screen and (width >= 1440px){
+            width: 50%;
+        }
+        h1 {
+            font-family: "Playfair Display, serif";
+            font-weight: 600;
+            font-size: 2em;
+
+            span {
+                background-clip: text;
+                background-image: linear-gradient(to right, $gradient-color);
+                color: transparent;
+            }
+        }
+
+        p {
+
+            font-family: $main-font;
+            font-size: 1.1em;
+            color: rgb(55, 65, 81);
+        }
+    }
+    #WDXCardContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
