@@ -2,42 +2,90 @@
 @use "../../globalstyles/variables.scss" as *;
 
 #WDXSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  padding: 2rem 2% 8rem 2%;
+  #WDXContainer {
     max-width: 1440px;
-    padding: 1.5rem 2%;
-    gap: 2rem;
     #WDXtxtContainer {
+      h1 {
         text-align: center;
-        width: 70%;
-        @media screen and (width >= 1440px){
-            width: 50%;
-        }
-        h1 {
-            font-family: "Playfair Display, serif";
-            font-weight: 600;
-            font-size: 2em;
+        font-family: $title-font;
+        font-weight: 600;
+        font-size: 2.2em;
 
-            span {
-                background-clip: text;
-                background-image: linear-gradient(to right, $gradient-color);
-                color: transparent;
-            }
+        span {
+          background-clip: text;
+          background-image: linear-gradient(to right, $gradient-color);
+          color: transparent;
         }
+      }
 
-        p {
-
-            font-family: $main-font;
-            font-size: 1.1em;
-            color: rgb(55, 65, 81);
-        }
+      p {
+        text-align: center;
+        font-family: $main-font;
+        font-size: 1em;
+        color: rgb(55, 65, 81);
+        margin: 1rem 0;
+      }
     }
-    #WDXCardContainer{
+    #WDXCardContainer {
+      display: flex;
+      margin-top: 5rem;
+      .cardContainer {
+        position: relative;
         display: flex;
-        justify-content: space-between;
-    }
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem 1rem;
+        width: 27rem;
+        height: 14rem;
+        background-color: unset;
+        border-style: none;
+        border-radius: 10px;
+        border: 1px solid hsla(340, 82%, 52%, 0.3);
+        &::before {
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          top: -10px;
+          left: -10px;
+          border-top: 2px solid hsl(42 87% 55%);
+          border-left: 2px solid hsl(42 87% 55%);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          bottom: -10px;
+          right: -10px;
+          border-bottom: 2px solid hsl(42 87% 55%);
+          border-right: 2px solid hsl(42 87% 55%);
+        }
 
+        .cardImg {
+          display: grid;
+          place-items: center;
+          background-color: hsla(340, 82%, 52%, 0.1);
+          border: none;
+          border-radius: 20rem;
+          width: 4rem;
+          height: 4rem;
+        }
+        h3 {
+          font-family: $title-font;
+          font-weight: 600;
+          font-size: 1.2em;
+        }
+        p {
+          font-family: $main-font;
+          font-size: 1em;
+          color: rgba(55, 65, 81, 0.9);
+        }
+      }
+    }
+  }
 }
