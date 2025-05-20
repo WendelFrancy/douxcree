@@ -18,10 +18,7 @@ const CallToAction: React.FC = () => {
             <div id="homeBtnContainer">
               <button className="btnExplore">
                 Explorar Produtos
-                <img
-                  src="src\assets\arrow-pointing-right_1131.png"
-                  alt="Seta para direita"
-                />
+                <span></span>
               </button>
               <button className="btnHistory"> Nossa História </button>
             </div>

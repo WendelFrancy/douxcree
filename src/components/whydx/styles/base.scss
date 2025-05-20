@@ -1,12 +1,15 @@
 @use "../../globalstyles/mixins.scss" as *;
 @use "../../globalstyles/variables.scss" as *;
 
-#WDXSection {
+#wdxSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(255, 255, 255);
   padding: 2rem 2% 8rem 2%;
-  #WDXContainer {
+  #wdxContainer {
     max-width: 1440px;
-    #WDXtxtContainer {
+    #secTitle {
       h1 {
         text-align: center;
         font-family: $title-font;
@@ -25,11 +28,15 @@
         font-family: $main-font;
         font-size: 1em;
         color: rgb(55, 65, 81);
-        margin: 1rem 0;
+        margin: 1rem auto;
+        max-width: 45rem;
       }
     }
-    #WDXCardContainer {
+    #wdxCardContainer {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
       margin-top: 5rem;
       .cardContainer {
         position: relative;
@@ -48,8 +55,8 @@
         &::before {
           content: "";
           position: absolute;
-          width: 25px;
-          height: 25px;
+          width: 20px;
+          height: 20px;
           top: -10px;
           left: -10px;
           border-top: 2px solid hsl(42 87% 55%);
@@ -58,8 +65,8 @@
         &::after {
           content: "";
           position: absolute;
-          width: 25px;
-          height: 25px;
+          width: 20px;
+          height: 20px;
           bottom: -10px;
           right: -10px;
           border-bottom: 2px solid hsl(42 87% 55%);

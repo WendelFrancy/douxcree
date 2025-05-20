@@ -4,13 +4,13 @@ import "./styles/main.scss";
 const Whydx: React.FC = () => {
     return(
     <>
-        <section id="WDXSection">
-            <div id="WDXContainer">
-                <div id="WDXtxtContainer">
+        <section id="wdxSection">
+            <div id="wdxContainer">
+                <div id="secTitle">
                     <h1>Por que escolher <span>DOUXCREÉ</span></h1>
                     <p>Nossa marca combina a tradição francesa de beleza com ingredientes premium e tecnologia avançada.</p>
                 </div>
-                <div id="WDXCardContainer">
+                <div id="wdxCardContainer">
                     <div className="cardContainer">
                         <img className="cardImg" src="src\assets\obsolete-assets\lolalogo.png" alt="" />
                         <h3> Ingredientes Naturais </h3>

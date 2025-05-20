@@ -52,7 +52,7 @@
       .btnExplore {
         display: flex;
         align-items: center;
-        gap: 0.4rem;
+        gap: 0.7rem;
         @include btnFontStyle();
         color: white;
         background-color: $menu-main-color;
@@ -65,9 +65,13 @@
           opacity: 0.9;
           cursor: pointer;
         }
-        img {
-          height: 0.8rem;
-          filter: invert(1);
+        span {
+          height: .5rem;
+          width: .5rem;
+          border-radius: 1px;
+          border-right: 2px solid white;
+          border-top: 2px solid white;
+          transform: rotate(45deg);
         }
       }
       .btnHistory {
@@ -91,5 +95,6 @@
   #homeImage {
     height: 31rem;
     border-radius: 10px;
+    box-shadow:0 15px 30px 3px rgba(204, 176, 217, .5);
   }
 }
