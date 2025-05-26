@@ -1,0 +1,24 @@
+@use "./variables.scss" as *;
+
+#secTitle {
+  h1 {
+    text-align: center;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 2.2em;
+
+    span {
+      background-clip: text;
+      background-image: linear-gradient(to right, $gradient-color);
+      color: transparent;
+    }
+  }
+  p {
+    text-align: center;
+    font-family: $main-font;
+    font-size: 1em;
+    color: rgb(55, 65, 81);
+    margin: 1rem auto;
+    max-width: 45rem;
+  }
+}

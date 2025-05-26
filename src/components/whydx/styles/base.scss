@@ -1,5 +1,5 @@
-@use "../../globalstyles/mixins.scss" as *;
-@use "../../globalstyles/variables.scss" as *;
+@use "../../global/globalstyles/mixins.scss" as *;
+@use "../../global/globalstyles/variables.scss" as *;
 
 #wdxSection {
   display: flex;
@@ -9,29 +9,6 @@
   padding: 2rem 2% 8rem 2%;
   #wdxContainer {
     max-width: 1440px;
-    #secTitle {
-      h1 {
-        text-align: center;
-        font-family: $title-font;
-        font-weight: 600;
-        font-size: 2.2em;
-
-        span {
-          background-clip: text;
-          background-image: linear-gradient(to right, $gradient-color);
-          color: transparent;
-        }
-      }
-
-      p {
-        text-align: center;
-        font-family: $main-font;
-        font-size: 1em;
-        color: rgb(55, 65, 81);
-        margin: 1rem auto;
-        max-width: 45rem;
-      }
-    }
     #wdxCardContainer {
       display: flex;
       flex-wrap: wrap;

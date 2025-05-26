@@ -1,0 +1,46 @@
+@use "../../global/globalstyles/variables.scss" as *;
+@use "../../global/globalstyles/mixins.scss" as *;
+
+#highLightsSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #highLContainer {
+    max-width: 1440px;
+    #cardsContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    #btnContainer {
+      display: grid;
+      place-items: center;
+      margin-top: 3rem;
+      button {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-family: $main-font;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: white;
+        padding: .6rem 2rem;
+        background-color: $sub-color;
+        border: none;
+        outline: none;
+        border-radius: 0.3rem;
+        @include btnTransition();
+        &:hover {
+          background-color: $sub-color;
+          opacity: 0.9;
+          cursor: pointer;
+        }
+
+        img {
+          height: 1.4rem;
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}
