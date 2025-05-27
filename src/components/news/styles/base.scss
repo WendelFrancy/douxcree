@@ -1,0 +1,53 @@
+@use "../../global/globalstyles/variables.scss" as *;
+@use "../../global/globalstyles/mixins.scss" as *;
+
+
+#newsSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $card-bg;
+  #newsContainer {
+    margin: 3rem auto;
+    max-width: 1440px;
+    #subscribeContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      padding: 1rem 2rem;
+      #inputSubs {
+        padding: 1rem 1rem;
+        border-radius: .5rem;
+        border: 1px solid rgba(0,0,0,.3);
+        width: 22rem;
+        outline: none;
+        &:focus{
+            border: 2px solid $menu-main-color;
+        }
+        &::placeholder {
+          font-family: $main-font;
+          font-size: 1.2em;
+          opacity: .8;
+        }
+      }
+      #btnSubscribe {
+        font-family: $main-font;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: white;
+        padding: .5rem 1.5rem;
+        background-color: $menu-main-color;
+        border: none;
+        outline: none;
+        border-radius: 0.3rem;
+        @include btnTransition();
+        &:hover {
+          background-color: $menu-main-color;
+          opacity: 0.9;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
